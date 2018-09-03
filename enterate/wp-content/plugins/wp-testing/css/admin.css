@@ -1,0 +1,458 @@
+.error.wpt_test_editor > ul {
+    margin-left: 1em;
+}
+.error.wpt_test_editor ul {
+    list-style: circle;
+    padding-left: 1em;
+}
+
+.wp-media-buttons .wpt-button.add {
+    padding-left: 1px;
+}
+.wp-media-buttons .wpt-button.edit {
+    padding-left: 3px;
+}
+
+#wpt_edit_questions .inside {
+    overflow: auto;
+}
+
+#wpt_feedback .inside {
+	margint-top: 12px;
+}
+
+#wpt_feedback .inside > div.wpt-avatar {
+	float: left;
+	margin-right: 6px;
+	border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#wpt_feedback .wpt-avatar-image {
+	background-image: url("../img/ustimenko.alexander.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 70px;
+	height: 70px;
+}
+
+#wpt_feedback .inside > div {
+	margin-bottom: 12px;
+}
+
+.wpt_footer .separator {
+	color: #cccccc;
+	font-style: normal;
+	margin: 0px 0.50em;
+}
+
+table.wpt_questions {
+    width: 100%;
+}
+
+table.widefat td.actions {
+  padding-left: 0px;
+}
+
+
+.actions button.notice-dismiss {
+	padding: 4px;
+}
+
+.wpt_questions .wpt_title input {
+    width: 100%;
+}
+
+.wpt_questions .wpt_number {
+    width: 1em;
+    text-align: right;
+}
+
+.wpt_questions .wpt_answer input {
+    width: 100%;
+    min-width: 10em;
+}
+
+.wpt_questions .wpt_scale {
+    text-align: center;
+}
+
+.wpt_questions .wpt_scale input {
+    text-align: center;
+    width: 100%;
+}
+
+.wpt_questions button {
+    margin-right: 5px;
+}
+
+.wpt_questions .actions {
+    text-align: right;
+    width: 24px;
+}
+
+    .wpt_questions .actions button {
+        position: static;
+    }
+
+.wpt_individual_action .note {
+	visibility: hidden;
+	cursor: default;
+	margin: 0px 10px;
+}
+
+    .wpt_individual_action button {
+        float: left;
+    }
+
+    .wpt_individual_action:hover .note {
+        visibility: visible;
+    }
+
+table.wpt_scores {
+	width: auto;
+}
+
+table.wpt_scores th,
+table.wpt_scores td {
+    cursor: default;
+}
+
+.wpt_scroll {
+	overflow: auto;
+}
+
+#wpt_edit_scores .wpt_scroll {
+	max-height: 50em;
+}
+
+table.wpt_scores td div,
+table.wpt_scores th div {
+	white-space: nowrap;
+	max-width: 5em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	clear: both;
+}
+table.wpt_scores.widefat td,
+table.wpt_scores.widefat th {
+  padding: 0.62em 0.77em;
+}
+table.wpt_scores .wpt_answer td div {
+    max-width: 10em;
+}
+
+table.wpt_scores .hovered.wpt_title,
+table.wpt_scores tbody tr.hovered .wpt_title {
+    background: #dadada;
+}
+
+table.wpt_scores col.focused,
+table.wpt_scores tbody tr.focused {
+    background: #f3f3f3;
+}
+
+table.wpt_scores .focused.wpt_title,
+table.wpt_scores tbody tr.focused .wpt_title {
+    background: #6d6d6d;
+    color: #ffffff;
+}
+
+table.wpt_scores .wpt_answer .number.wpt_first,
+table.wpt_scores .wpt_question_item .number.wpt_last,
+table.wpt_scores .wpt_scales .number.wpt_last {
+    padding-left: 20px;
+}
+
+table.wpt_scores .wpt_scales th {
+    vertical-align: bottom;
+}
+table.wpt_scores .wpt_scales .wpt_meta {
+    float: right;
+    margin-bottom: 0.25em;
+    font-size: 80%;
+}
+table.wpt_scores .wpt_scales .wpt_max {
+    margin-right: 0.5em;
+}
+.wptApp input.ng-invalid {
+    color: #dc3232;
+    border-bottom-color: #dc3232;
+    border-bottom-width: 2px;
+    margin-bottom: -1px;
+}
+.wptApp .wpt_invalid_message {
+	color: #dc3232;
+	padding: 0px 2px;
+	padding-top: 4px;
+}
+
+table.wpt_scores .wpt_score {
+    width: 5em;
+}
+table.wpt_scores .wpt_score span {
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    height: 1.4em;
+    padding-top: 5px;
+    padding-left: 7px;
+    outline: 1px solid gainsboro;
+}
+table.wpt_scores .wpt_score input {
+    width: 100%;
+}
+
+.wpt_template {
+    display: none;
+}
+
+table.wpt_formulas {
+    margin-top: 1em;
+}
+
+table.wpt_formulas .wpt_formulas_toolbars_container {
+    padding-bottom: 0px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.wpt_formulas_toolbar *[type=button] {
+    vertical-align: middle;
+}
+
+.wpt_formulas_toolbars {
+    width: 100%;
+}
+
+.wpt_formulas_toolbars td {
+    padding: 0px;
+}
+.wpt_formulas_toolbars th {
+    padding: 0px  10px;
+    width: 50px;
+}
+.wpt_formulas_toolbars .howto {
+    padding: 5px 10px;
+}
+
+.wpt_formulas_toolbars .button {
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-right: 3px;
+    height: 32px;
+    min-width: 32px;
+}
+
+.wpt_formulas_toolbars .question-answer input {
+    width: 50px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.wpt_formulas_toolbars .operators input {
+    min-width: 3.5em;
+}
+
+.wpt_formulas .wpt_title {
+    width: 1em;
+    white-space: nowrap;
+}
+
+.wpt_formulas .wpt_number {
+    width: 1em;
+}
+
+.wpt_formulas .wpt_formula input[type=text] {
+    width: 100%;   
+}
+
+#wpt_quick_fill_scores,
+#wpt_quick_fill_questions {
+    margin-bottom: 1em;
+}
+
+#wpt_quick_fill_questions textarea,
+.quick-fill textarea {
+    height: 30em;
+    width: 100%;
+}
+
+table.wpt_quick_scores th.questions {
+    width: 90%;
+}
+table.wpt_quick_scores .score input {
+    text-align: center;
+    width: 5em;
+}
+table.wpt_quick_scores .answer input {
+    text-align: center;
+    width: 5em;
+}
+table.wpt_quick_scores .questions input {
+    width: 100%;
+}
+table.wpt_quick_scores input {
+    margin: 0px;
+}
+table.wpt_quick_scores select {
+    max-width: 10em;
+}
+
+table.wpt_quick_scores td.scale,
+table.wpt_quick_scores td.answer {
+    max-width: 10em;
+}
+
+.wpt-add-individual-answers span.howto {
+    display: inline;
+}
+.wpt-add-individual-answers.wp-hidden-children span.howto.wp-hidden-child {
+    display: none;
+}
+.wpt-add-individual-answers textarea {
+    height: 5em;
+    width: 100%;    
+}
+
+ul.categorychecklist.ui-sortable li.wpt-sortable {
+    background-image: url(../img/icon-grippable.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 10px;
+    cursor: move;
+}
+
+ul.categorychecklist.ui-sortable li.wpt-sortable.wpt-sortable-container {
+    background-position: left 5px;
+}
+
+ul.categorychecklist.ui-sortable li.sortable-placeholder {
+    background: none;
+}
+
+#passings-filter.form-passingtable-user .bulkactions {
+    display: none;
+}
+
+#passings-filter .tablenav .actions select {
+    float: left;
+    margin-right: 6px;
+    max-width: 200px;
+}
+
+#passings-filter .search-input {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    max-width: 200px;
+    vertical-align: middle;
+}
+
+#passings-filter .search-input span {
+    display: none;
+}
+
+#passings-filter .search-input.has-value span {
+    display: block;
+    margin: 6px 4px;
+    margin-top: 0px;
+    color: #777;
+}
+
+#passings-filter .search-input input {
+    width: 10em;
+}
+
+.wp-list-table.passings .column-user img {
+    float: left;
+    margin-top: 1px;
+    margin-right: 10px;
+}
+
+.wp-list-table.passings th.sortable span {
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+.wp-list-table.passings th.sortable .sorting-indicator {
+    display: block;
+    margin-left: -10px;
+    padding-right: 0px;
+    visibility: hidden;
+}
+
+.wp-list-table.passings th.sorted.asc .sorting-indicator,
+.wp-list-table.passings th.desc:hover span.sorting-indicator,
+.wp-list-table.passings th.sorted.desc .sorting-indicator,
+.wp-list-table.passings th.asc:hover span.sorting-indicator {
+    visibility: visible;
+}
+
+pre.exposed {
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+#screen-options-wrap label[for=id-hide],
+#screen-options-wrap label[for=actions-hide],
+#screen-options-wrap label[for=row_number-hide],
+#screen-options-wrap label[for=view-hide] {
+    display: none;
+}
+
+.screen-options label[for=passing_browser_per_page] {
+    float: left;
+    margin-right: 4px;
+    padding-right: 0px;
+    line-height: 28px;
+}
+
+#adv-settings h5 {
+    display: none;
+}
+
+#adv-settings h5:first-child {
+    display: block;
+}
+
+#adv-settings > .screen-options {
+    padding-top: 10px;
+}
+
+body .wpt_maximizable .wpt_scroll {
+    max-height: 40em;
+}
+
+.wpt-ajax-save,
+.wpt-ajax-save * {
+    cursor: progress !important; 
+}
+
+.asap-wrap.asap-0 .asap-1,
+.asap-wrap.asap-1 .asap-0 {
+    display: none;	
+}
+
+.text-to-html {
+    white-space: pre-wrap;
+    background: white;
+    padding: 0px 10px;
+    margin-top: 1em;
+}
+
+.text-to-html ul {
+	padding: 0px 3em;
+}
+
+.text-to-html li {
+    list-style: disc;
+    margin: 0px;
+    line-height: 1em;
+}
+
+.text-to-html li > ul {
+    margin-top: 1em;
+} 

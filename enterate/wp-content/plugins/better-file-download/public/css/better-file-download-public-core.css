@@ -1,0 +1,158 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/* TAXONOMY DOWNLOAD BUTTON*/
+.bfd-download-btn{		
+	float:right; 	
+	padding: 5px;
+	display: table;	
+    table-layout: fixed;		
+}
+.bfd-button-container{
+	width:25%;
+	overflow: auto;
+}
+/* SINGLE DOWNLOAD BUTTON*/
+.bfd-single-download-btn{		
+	text-align: center;
+	top: 5px;	
+}
+ .bfd-single-button-container{
+	width:12%;	
+ }
+/*DOWNLOAD BLOCK*/
+.bfd-download-block, .bfd-single-download{
+	width: 100%;
+	min-width: 10rem;
+    padding: 7px;
+    font-family: inherit;   
+}
+/*DOWNLOAD TEXT*/
+.bfd-download-meta{
+	width:60%;
+}
+.bfd-download-meta p{	
+	margin-bottom: 0;
+}
+.bfd-download-title{	
+	margin-bottom: 0 !important;
+	font-size: 1em;
+}
+/*FILE ICON*/
+.bfd-icon-img{	
+	max-width: 40px;
+	max-height: auto;
+	margin: auto;
+	display: table-cell;
+	vertical-align: middle;	
+}
+.bfd-icon-single{	
+	float:right;
+}
+.bfd-mime-col{
+	width:12%;
+}
+/*DOWNLOAD ICON*/
+.bfd-icon {    
+    top:2px;
+	height: 16px;
+	position: relative;	
+}
+.down-arrow-icon{
+	min-width: 40px;
+}
+.bfd-svg-container{
+	position: relative;
+  	display: block;
+}
+.bfd-svg-container:after{
+	content: ""; 
+  	position: absolute; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+}
+/* ICON DISPLAY*/
+.bfd-column .fluid-width-video-wrapper object{
+	position: static !important;
+	height: 100% !important;
+	width: auto !important;	
+}
+/* FEATURED IMAGE*/
+.bfd-download-thumbnail{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-bottom: 10px;
+}
+/* SEARCH FORM*/
+#bfd-search-shortcode input{
+	max-width: 100%;
+}
+.bfd-embed-submit-field {
+	display: flex;	
+}
+.bfd-ajax-results{
+	margin: 1em 0;	
+}
+#bfd-search-button{
+	display: table;
+}
+#bfd-search-icon{
+	display: table-cell;
+	vertical-align: middle;
+}
+/* GRID */
+.bfd-tax-row{
+	display: table;	
+	width: 100%;
+}
+.bfd-single-row{
+	display: table;
+	width: 100%;	
+}
+.bfd-column{	
+	display: table-cell;
+	vertical-align: middle;
+}
+/* ALIGNMENT */
+.bfd-left{
+	float:left;
+}
+.bfd-right{
+	float: right;
+}
+.bfd-bottom-zero{
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    .bfd-icon {
+	    top:2px;
+		height: 16px;
+		position: relative;	
+	}
+    .bfd-column.bfd-button-container{
+    	display: table-cell;
+    	width: 50%;
+    }
+    .bfd-download-block .bfd-column{
+    	max-width:50% !important;
+		/*overflow: auto;*/
+    }
+    span.more{
+    	display: inline-flex !important;
+    }	
+    .bfd-single-download .bfd-column{
+    	display: table-cell;   	
+	}
+	.bfd-column.bfd-single-button-container{
+		display: table-cell;
+	}
+	.bfd-mime-col{
+    	display: none !important;
+    }
+}

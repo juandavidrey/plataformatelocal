@@ -1,0 +1,311 @@
+[
+    {
+        "name": "broofa/node-uuid",
+        "version": "v1.4.7",
+        "version_normalized": "1.4.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/broofa/node-uuid",
+            "reference": "309512573ec1c60143c257157479a20f7f1f51cd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/broofa/node-uuid/archive/v1.4.7.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "composer/installers",
+        "version": "v1.0.21",
+        "version_normalized": "1.0.21.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+            "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+            "shasum": ""
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "4.1.*"
+        },
+        "time": "2015-02-18T17:17:01+00:00",
+        "type": "composer-installer",
+        "extra": {
+            "class": "Composer\\Installers\\Installer",
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Composer\\Installers\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "http://composer.github.com/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Hurad",
+            "MODX Evo",
+            "OXID",
+            "SMF",
+            "Thelia",
+            "WolfCMS",
+            "agl",
+            "aimeos",
+            "annotatecms",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "elgg",
+            "fuelphp",
+            "grav",
+            "installer",
+            "joomla",
+            "kohana",
+            "laravel",
+            "lithium",
+            "magento",
+            "mako",
+            "mediawiki",
+            "modulework",
+            "moodle",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "puppet",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "symfony",
+            "typo3",
+            "wordpress",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
+        "name": "flourish/flourish",
+        "version": "0.9.x-dev",
+        "version_normalized": "0.9.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/garex/flourish-classes",
+            "reference": "c826410c3edb9da885e70c6f05d714b357fb2a4a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/garex/flourish-classes/archive/c826410c3edb9da885e70c6f05d714b357fb2a4a.zip",
+            "reference": "c826410c3edb9da885e70c6f05d714b357fb2a4a",
+            "shasum": null
+        },
+        "time": "2018-03-18T16:33:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "."
+            ]
+        }
+    },
+    {
+        "name": "nikic/php-parser",
+        "version": "v0.9.5",
+        "version_normalized": "0.9.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nikic/PHP-Parser.git",
+            "reference": "ef70767475434bdb3615b43c327e2cae17ef12eb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/ef70767475434bdb3615b43c327e2cae17ef12eb",
+            "reference": "ef70767475434bdb3615b43c327e2cae17ef12eb",
+            "shasum": ""
+        },
+        "require": {
+            "ext-tokenizer": "*",
+            "php": ">=5.2"
+        },
+        "time": "2014-07-23T18:24:17+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.9-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "PHPParser": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Nikita Popov"
+            }
+        ],
+        "description": "A PHP parser written in PHP",
+        "keywords": [
+            "parser",
+            "php"
+        ]
+    },
+    {
+        "name": "ruckusing/ruckusing-migrations",
+        "version": "1.1.0.1",
+        "version_normalized": "1.1.0.1",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/garex/ruckusing-migrations",
+            "reference": "issue/avoid-schema-constant"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/garex/ruckusing-migrations/archive/issue/avoid-schema-constant.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "bin": [
+            "ruckus.php"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Ruckusing": "lib/",
+                "Task": "lib/"
+            }
+        }
+    },
+    {
+        "name": "samyk/evercookie",
+        "version": "dev-2014-10-21",
+        "version_normalized": "dev-2014-10-21",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/samyk/evercookie.git",
+            "reference": "977db236367c509ce6b10fb565ed5a75c8d729d5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/samyk/evercookie/archive/977db236367c509ce6b10fb565ed5a75c8d729d5.zip",
+            "reference": "977db236367c509ce6b10fb565ed5a75c8d729d5",
+            "shasum": null
+        },
+        "time": "2015-01-18T22:12:29+00:00",
+        "type": "library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "xrstf/composer-php52",
+        "version": "v1.0.20",
+        "version_normalized": "1.0.20.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer-php52/composer-php52.git",
+            "reference": "bd41459d5e27df8d33057842b32377c39e97a5a8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer-php52/composer-php52/zipball/bd41459d5e27df8d33057842b32377c39e97a5a8",
+            "reference": "bd41459d5e27df8d33057842b32377c39e97a5a8",
+            "shasum": ""
+        },
+        "time": "2016-04-16T21:52:24+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-default": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "xrstf\\Composer52": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
+        "name": "yahnis-elsts/plugin-update-checker",
+        "version": "v2.2",
+        "version_normalized": "2.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/YahnisElsts/plugin-update-checker.git",
+            "reference": "155eff79642bb9996eeb6ef33ac06db8d5629847"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/155eff79642bb9996eeb6ef33ac06db8d5629847",
+            "reference": "155eff79642bb9996eeb6ef33ac06db8d5629847",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "time": "2015-07-28T10:43:46+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Yahnis Elsts",
+                "email": "whiteshadow@w-shadow.com",
+                "homepage": "http://w-shadow.com/",
+                "role": "Developer"
+            }
+        ],
+        "description": "A custom update checker for WordPress plugins. Useful if you can't host your plugin in the official WP plugin repository but still want it to support automatic plugin updates.",
+        "homepage": "https://github.com/YahnisElsts/plugin-update-checker/",
+        "keywords": [
+            "automatic updates",
+            "plugin updates",
+            "wordpress"
+        ]
+    }
+]

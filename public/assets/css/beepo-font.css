@@ -1,0 +1,56 @@
+/* .woff2:  Chrome 26+, Opera 23+, Firefox 39+ */
+/* .woff:   Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+
+@font-face {
+    font-family: 'beepo';
+    font-style: normal;
+    font-weight: 800;    
+    src: local('Beepo ExtraLight'), local('Beepo-ExtraLight'),
+         url('../fonts/beepo-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/beepo-extralight-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'beepo';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Beepo Light'), local('Beepo-Light'),
+         url('../fonts/beepo-light-webfont.woff2') format('woff2'),
+         url('../fonts/beepo-light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'beepo';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Beepo Regular'), local('Beepo-Regular'),
+         url('../fonts/beepo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/beepo-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'beepo';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Beepo SemiBold'), local('Beepo-SemiBold'),
+         url('../fonts/beepo-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/beepo-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'beepo';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Beepo Bold'), local('Beepo-Bold'),
+         url('../fonts/beepo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/beepo-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'beepo';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Beepo ExtraBold'), local('Beepo-ExtraBold'),
+         url('../fonts/beepo-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/beepo-extrabold-webfont.woff') format('woff');
+}

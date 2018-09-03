@@ -1,0 +1,15 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.wp-color-result{
+	margin: 0 5px 0 0 !important;
+}
+#bfd-tabs .nav-tab{
+	background: transparent !important;
+	border:none !important;
+	margin-left: 0 !important;
+}
+#download-categories-add-toggle{
+	display: none !important;
+}

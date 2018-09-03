@@ -1,0 +1,600 @@
+# Translation of Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-06-03 17:52:49+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: Stable (latest release)\n"
+
+#: src/Widget/PassingTable/User.php:24
+msgid "#"
+msgstr "Nro."
+
+#: src/Template/Test/Editor/edit-questions.php:40
+msgid "Questions"
+msgstr "Preguentas"
+
+#: src/Template/Test/Editor/edit-questions.php:88
+msgid "No questions to edit. Add new questions and then they will appear here."
+msgstr "No hay preguntas para editar. Añade nuevas preguntas y luego se mostrarán aquí."
+
+#: src/Template/Test/Editor/edit-questions.php:96
+msgid "No scores to edit. To edit scores you must have both answers and scales selected."
+msgstr "No hay puntuaciones para editar. Para editar puntuaciones debe tener las respuestas y escalas seleccionadas."
+
+#: src/Template/Test/Editor/edit-questions.php:155
+msgid "Add Individual Answers"
+msgstr "Añadir respuestas individuales"
+
+#: src/Template/Test/Editor/edit-questions.php:156
+msgid "— unique to each question. If you have same answers to all test questions, use the %s"
+msgstr "— única para cada pregunta. Si tienes las mismas respuestas para todas las preguntas, usa el %s"
+
+#: src/Template/Test/Editor/edit-questions.php:160
+msgid "Add here your individual answers as text; after test saving they will be extracted and created. Numbers and other indexes will be stripped automatically."
+msgstr "Añade aquí tus respuestas individuales como texto; después de guardar el test serán creados. Los números y otros índices se eliminarán de forma automática."
+
+#: src/Template/Test/Passer/fill-form.php:55
+msgid "Please select at least one answer."
+msgstr "Por favor, seleccione al menos una respuesta."
+
+#: src/Template/Test/Passer/fill-form.php:56
+msgid "Please choose only one answer."
+msgstr "Por favor, elija una sola respuesta."
+
+#: src/Widget/PassingTable/Admin.php:91
+msgid "Device"
+msgstr "Dispositivo"
+
+#: src/Widget/PassingTable/Admin.php:92
+msgid "IP address"
+msgstr "Dirección IP"
+
+#: src/Widget/PassingTable/Admin.php:93
+msgid "Browser"
+msgstr "Navegador"
+
+#: src/Template/Test/Editor/edit-questions.php:38
+msgid "Score"
+msgstr "Puntuación"
+
+#: src/Template/Test/Editor/edit-questions.php:39
+msgid "Answer"
+msgstr "Respuesta"
+
+#: src/Template/Test/Editor/edit-formulas.php:39
+msgid "Operators"
+msgstr "Operadores"
+
+#: src/Template/Test/Editor/edit-formulas.php:58
+msgid "Comparision"
+msgstr "Comparación"
+
+#: src/Template/Test/Editor/edit-formulas.php:64
+msgid "Operator"
+msgstr "Operador"
+
+#: src/Template/Test/Editor/edit-formulas.php:72
+msgid "No variables for formulas available. To use variables you must have scales selected or have at least one question and answer."
+msgstr "No hay variables para la fórmulas. Para utilizar variables debe tener escalas seleccionadas o tener por lo menos una pregunta y respuesta."
+
+#. translators: "scale-bla" should not ne translated
+#: src/Template/Test/Editor/edit-formulas.php:81
+msgid "Both numbers and percents allowed. For example \"scale-bla\" has total 30, then \"scale-bla > 15\" and \"scale-bla > 50%\" are same."
+msgstr "Ambos números y porcentajes permitidos. Por ejemplo  \"escale-bla \" tiene total de 30, entonces  \"escale-bla> 15 \" y  \"escala-bla> 50% \" son lo mismo."
+
+#: src/Template/Test/Editor/edit-questions.php:29
+#: src/Template/Test/Editor/edit-questions.php:67
+msgid "Quick Fill Scores"
+msgstr "Rellenar puntuaciones"
+
+#: src/Template/Test/Editor/edit-questions.php:37
+msgid "Scale"
+msgstr "Escala"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:141
+msgid "No Categories found"
+msgstr "Categoría no encontrada"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:142
+msgid "No Categories found in Trash"
+msgstr "Categoría no encontrada en la papelera"
+
+#: src/Model/Formula.php:246
+msgid "Formula for %s is incompatible as it contains both numbers and percentages"
+msgstr "Fórmula para %s no es compatible ya que contiene los números y porcentajes"
+
+#: src/Model/Formula.php:259
+msgid "Formula for %s has error"
+msgstr "Fórmula para% s tiene error"
+
+#: src/Model/FormulaVariable/ScaleValue.php:18
+msgid "Scale Variable"
+msgstr "Escala variable"
+
+#: src/Model/FormulaVariable/SelectedAnswer.php:18
+#: src/Template/Test/Editor/edit-formulas.php:45
+msgid "Question %1$s answer %2$s"
+msgstr "Pregunta %1$s respuesta %2$s"
+
+#: src/Model/FormulaVariable/SelectedAnswer.php:19
+msgid "Answer Variable"
+msgstr "Respuesta variable"
+
+#: src/Model/Shortcode/Test.php:19
+msgid "Test \"%s\" is not published. You can not include it anywhere."
+msgstr "Prueba \"%s\" no se publica. Usted puede no incluirlo en cualquier lugar."
+
+#: src/Model/Shortcode/TestReadMore.php:30
+msgid "Start Test"
+msgstr "Iniciar prueba"
+
+#: src/Template/Test/Editor/add-questions.php:5
+#: src/Template/Test/Editor/add-questions.php:10
+msgid "Quick Fill From Text"
+msgstr "Rellenar texto"
+
+#: src/Template/Test/Editor/add-questions.php:9
+msgid "Paste here your questions and they will fill fields below. Numbers and other indexes will be stripped automatically."
+msgstr "Pegue aquí las preguntas y a continuación se rellenaran los campos . Los números y otros índices se eliminarán de forma automática."
+
+#: src/Template/Test/Editor/edit-formulas.php:3
+msgid "Formula"
+msgstr "Fórmula"
+
+#: src/Template/Test/Editor/edit-formulas.php:4
+msgid "Result"
+msgstr "Resultado"
+
+#: src/Template/Test/Editor/edit-formulas.php:28
+msgid "No formulas to edit. To edit formulas you must have results selected."
+msgstr "No hay fórmulas para editar. Para editar fórmulas debes seleccionar resultados."
+
+#: src/Template/Test/Editor/edit-formulas.php:37
+msgid "Variables"
+msgstr "Variables"
+
+#: src/Template/Test/Editor/edit-formulas.php:38
+msgid "Comparisions"
+msgstr "Comparaciones"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:138
+msgid "Parent Category"
+msgstr "Categoría superior"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:140
+msgid "New Category"
+msgstr "Nueva categoría"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:137
+msgid "New Category Name"
+msgstr "Nombre de la Nueva Categoría"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:136
+msgid "Update Category"
+msgstr "Actualizar Categoría"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:135
+msgid "All Categories"
+msgstr "Todas las categorías"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:132
+msgid "Parent Category:"
+msgstr "Categoría Superior:"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:131
+msgid "Search Categories"
+msgstr "Buscar Categorías"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:130
+msgid "View Category"
+msgstr "Ver categoría"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:129
+msgid "Edit Category"
+msgstr "Editar Categoría"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:111
+msgid "Parent Result:"
+msgstr "Resultado superior:"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:113
+#: src/Template/Test/Passer/get-results.php:17
+#: src/Widget/PassingTable/Admin.php:89 src/Widget/PassingTable/User.php:28
+msgid "Results"
+msgstr "Resultados"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:114
+msgid "All Results"
+msgstr "Todos los resultados"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:115
+msgid "Update Result"
+msgstr "Actualizar resultado"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:116
+msgid "New Result Name"
+msgstr "Nuevo nombre de resultado"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:117
+msgid "Parent Result"
+msgstr "Resultado superior"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:119
+msgid "New Result"
+msgstr "Nuevo resultado"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:120
+msgid "No Results found"
+msgstr "Resultados no encontrados"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:121
+msgid "No Results found in Trash"
+msgstr "Resultados no encontrados"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:126
+#: src/Doer/WordPressEntitiesRegistrator.php:134
+msgid "Test Categories"
+msgstr "Categorías del test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:127
+msgid "Test Category"
+msgstr "Categoria del test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:128
+msgid "Add New Category"
+msgstr "Añadir Nueva Categoría"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:89
+msgid "Search Scales"
+msgstr "Buscar escala"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:90
+msgid "Parent Scale:"
+msgstr "Escala superior:"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:92
+#: src/Widget/PassingTable/Admin.php:88 src/Widget/PassingTable/User.php:27
+msgid "Scales"
+msgstr "Escala"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:93
+msgid "All Scales"
+msgstr "Todas las escalas"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:94
+msgid "Update Scale"
+msgstr "Actualizar escala"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:95
+msgid "New Scale Name"
+msgstr "Nuevo nombre de escala"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:96
+msgid "Parent Scale"
+msgstr "Escala superior"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:98
+msgid "New Scale"
+msgstr "Nueva escala"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:99
+msgid "No Scales found"
+msgstr "Escalas no encontrada"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:100
+msgid "No Scales found in Trash"
+msgstr "Escalas no encontradas en la papelera"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:105
+msgid "Test Results"
+msgstr "Resultados del test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:106
+msgid "Test Result"
+msgstr "Resultado del test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:107
+msgid "Add New Result"
+msgstr "Añadir nuevo resultado"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:108
+msgid "Edit Result"
+msgstr "Editar resultado"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:109
+msgid "View Result"
+msgstr "Ver resultado"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:110
+msgid "Search Results"
+msgstr "Resultados de la búsqueda"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:65
+msgid "Add New Answer"
+msgstr "Añadir nueva respuesta"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:66
+msgid "Edit Answer"
+msgstr "Editar respuesta"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:67
+msgid "View Answer"
+msgstr "Ver respuesta"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:68
+msgid "Search Answers"
+msgstr "Buscar respuesta"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:69
+msgid "Parent Answer:"
+msgstr "Respuesta superior:"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:71
+msgid "Answers"
+msgstr "Respuestas"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:72
+msgid "All Answers"
+msgstr "Todas las respuestas"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:73
+msgid "Update Answer"
+msgstr "Actualizar respuesta"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:74
+msgid "New Answer Name"
+msgstr "Nuevo nombre de respuesta"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:75
+msgid "Parent Answer"
+msgstr "Respuesta superior"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:77
+msgid "New Answer"
+msgstr "Nueva respuesta"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:78
+msgid "No Answers found"
+msgstr "Respuestas no encontradas"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:79
+msgid "No Answers found in Trash"
+msgstr "Respuestas no encontraras en le papelera"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:84
+msgid "Test Scales"
+msgstr "Escalas"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:85
+msgid "Test Scale"
+msgstr "Escala"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:86
+msgid "Add New Scale"
+msgstr "Añadir nueva escala"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:87
+msgid "Edit Scale"
+msgstr "Editar escala"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:88
+msgid "View Scale"
+msgstr "Ver escala"
+
+#: src/Doer/TestPasserAction/GetResults.php:85
+msgid "Sorry but your browser %s is not compatible to display the chart"
+msgstr "Lo sentimos, pero tu navegador %s es no es compatible para mostrar el gráfico"
+
+#: src/Doer/TestPasserAction/ProcessForm.php:74
+msgid "Test data not valid"
+msgstr "Los datos del test no son válidos"
+
+#: src/Doer/TestPasserAction/ProcessForm.php:75
+msgid "You passed not valid data to test."
+msgstr "Datos no válidos para pasar el test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:14
+#: src/Widget/PassingTable/Admin.php:87 src/Widget/PassingTable/User.php:26
+msgid "Test"
+msgstr "Test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:15
+msgctxt "test"
+msgid "Add New"
+msgstr "Añadir Nuevo"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:16
+msgid "Add New Test"
+msgstr "Añadir nuevo test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:17
+msgid "Edit Test"
+msgstr "Editar test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:18
+msgid "View Test"
+msgstr "Ver test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:19
+msgid "Search Tests"
+msgstr "Buscar test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:20
+msgid "Parent Test:"
+msgstr "Test superior:"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:23 src/Widget/PassingTable.php:84
+msgid "All Tests"
+msgstr "Todos los test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:24
+msgid "Update Test"
+msgstr "Actualizar test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:25
+msgid "New Test Name"
+msgstr "Nuevo nombre de test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:26
+msgid "Parent Test"
+msgstr "Test superior"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:28
+msgid "New Test"
+msgstr "Nuevo test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:29
+msgid "No Tests found"
+msgstr "No se encontraron test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:30
+msgid "No Tests found in Trash"
+msgstr "No se encontraron test en la papelera"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:32
+msgid "Instrument to measure unobserved constructs (latent variables). Typically it is a series of tasks or problems that the respondent has to solve."
+msgstr "Instrumento para medir construciones no observadas (variables latentes). Normalmente se trata de una serie de tareas o problemas que el encuestado tiene que resolver."
+
+#: src/Doer/WordPressEntitiesRegistrator.php:63
+#: src/Template/Test/Editor/edit-questions.php:156
+msgid "Test Answers"
+msgstr "Respuestas del test"
+
+#: src/Doer/WordPressEntitiesRegistrator.php:64
+msgid "Test Answer"
+msgstr "Respuesta del test"
+
+#: src/Doer/TestPasserAction/GetResults.php:75
+msgid "Test result not found"
+msgstr "Resultados del test no encontrados"
+
+#: src/Doer/TestPasserAction/GetResults.php:76
+msgid "You can not get anything from nothing."
+msgstr "No puede obtener nada de nada"
+
+#: src/Doer/TestEditor.php:240
+msgid "Show scales chart"
+msgstr "Mostrar gráfico de escalas"
+
+#: src/Doer/TestEditor.php:244
+msgid "Show scales"
+msgstr "Mostrar escalas"
+
+#: src/Doer/TestEditor.php:248
+msgid "Sort scales by score"
+msgstr "Mostrar escalas por puntuación"
+
+#: src/Doer/TestEditor.php:252
+msgid "Show test description"
+msgstr "Mostrar descripción del test"
+
+#: src/Doer/TestEditor.php:350
+msgid "Test data not saved"
+msgstr "Los datos de test no se guardan"
+
+#: src/Doer/TestPasser/DirectRenderer.php:19
+#: src/Doer/TestPasser/FilterRenderer.php:105
+#: src/Template/Test/Passer/fill-form.php:79
+msgid "Test is under construction"
+msgstr "Test en construcción"
+
+#: src/Doer/TestPasser/FilterRenderer.php:106
+#: src/Template/Test/Passer/fill-form.php:80
+msgid "You can not get any results from it yet."
+msgstr "Aún no es posible obtener resultados."
+
+#: src/Doer/TestPasserAction/FillForm.php:64
+msgid "{percentage}% answered"
+msgstr "{percentage}% contestado"
+
+#: src/Doer/TestPasserAction/FillForm.php:73
+msgid "Next"
+msgstr "Siguiente"
+
+#: src/Component/StepStrategy.php:119 src/Model/Scale.php:84
+msgid "%1$g out of %2$g"
+msgstr "%1$g de %2$g"
+
+#. #-#-#-#-#  tmp-wp-testing.pot (Wp-testing 0.18.9)  #-#-#-#-#
+#. Description of the plugin/theme
+#: src/Doer/Installer.php:38
+msgid "Helps to create psychological tests."
+msgstr "Ayuda para crear test psicológicos."
+
+#: src/Doer/PassingBrowser/Admin.php:77 src/Doer/PassingBrowser/Admin.php:84
+msgid "Respondents’ test results"
+msgstr "Resultados de las pruebas"
+
+#: src/Doer/PassingBrowser/Admin.php:78
+msgid "Respondents’ results"
+msgstr "Resultados de los encuestados"
+
+#: src/Doer/PassingBrowser/User.php:10
+#: src/Doer/WordPressEntitiesRegistrator.php:13
+#: src/Doer/WordPressEntitiesRegistrator.php:22
+msgid "Tests"
+msgstr "Test"
+
+#: src/Doer/PassingBrowser/User.php:11
+msgid "My Results"
+msgstr "Resultados de mi"
+
+#: src/Doer/PassingBrowser/User.php:18
+msgid "My Test Results"
+msgstr "Mis resultados de la prueba"
+
+#: src/Doer/TestEditor.php:36
+msgid "Test Page Options"
+msgstr "Opciones de Test"
+
+#: src/Doer/TestEditor.php:38
+msgid "Result Page Options"
+msgstr "Opciones de Resultado"
+
+#: src/Doer/TestEditor.php:40
+#: src/Template/Test/Editor/content-editor-buttons.php:7
+msgid "Edit Questions and Scores"
+msgstr "Editar preguntas y puntuaciones"
+
+#: src/Doer/TestEditor.php:41
+#: src/Template/Test/Editor/content-editor-buttons.php:3
+msgid "Add New Questions"
+msgstr "Añadir nueva pregunta"
+
+#: src/Doer/TestEditor.php:42
+#: src/Template/Test/Editor/content-editor-buttons.php:11
+msgid "Edit Formulas"
+msgstr "Editar fórmulas"
+
+#: src/Doer/TestEditor.php:184
+msgid "Publish on the home page"
+msgstr "Publicar en la página de inicio"
+
+#: src/Doer/TestEditor.php:206
+msgid "Show in title percentage of questions that respondent already answered"
+msgstr "Mostrar en el título de la página el porcentaje de respuestas contestadas"
+
+#: src/Doer/TestEditor.php:210
+msgid "Show one question per page"
+msgstr "Mostrar una pregunta por página"
+
+#: src/Doer/TestEditor.php:214
+msgid "Allow multiple answers per question"
+msgstr "Permite múltiples respuestas para cada pregunta"
+
+#: src/Doer/TestEditor.php:218
+msgid "Reset respondent answers when \"Back\" button pressed"
+msgstr "Recomponer respuestas contestadas cuando pulse el botón atrás"
+
+#: src/Doer/TestEditor.php:221
+msgid "Button caption"
+msgstr "Texto del botón de resultados"
+
+#: src/Doer/TestEditor.php:223 src/Doer/TestPasserAction/FillForm.php:70
+msgid "Get Test Results"
+msgstr "Obtener resultados"

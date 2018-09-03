@@ -1,0 +1,161 @@
+{
+    "name": "garex/wp-testing",
+    "description": "Helps to create psychological tests",
+    "type": "wordpress-plugin",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Ustimenko Alexander",
+            "email": "a@ustimen.co"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0.0"
+        , "xrstf/composer-php52": "1.*"
+        , "ruckusing/ruckusing-migrations": "1.1.0.1"
+        , "flourish/flourish": "0.9.*@dev"
+        , "nikic/php-parser": "0.9.5"
+        , "samyk/evercookie": "dev-2014-10-21"
+        , "broofa/node-uuid": "^1.4"
+        , "yahnis-elsts/plugin-update-checker": "^2.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd",
+            "tools/deploy/clean-up-vendor.sh",
+            "tools/deploy/document-plugin-update-checker-usage.sh"
+        ],
+        "post-update-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd",
+            "tools/deploy/clean-up-vendor.sh",
+            "tools/deploy/document-plugin-update-checker-usage.sh"
+        ],
+        "post-autoload-dump": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ]
+    },
+    "config": {
+        "autoloader-suffix": "WpTestingF039FAC91B306FBDD13CF04E7AC62DF9"
+    },
+    "autoload": {
+        "classmap": [
+            "db/migrations/wp_testing/",
+            "src/",
+            "vendor/yahnis-elsts/plugin-update-checker/plugin-update-checker.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit-php52": "dev-3.6.12-php52",
+        "phpunit/phpunit-mock-objects-php52": "dev-1.1.0-php52"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package":
+            {
+                "autoload": {
+                    "psr-0": {
+                        "Ruckusing": "lib/",
+                        "Task": "lib/"
+                    }
+                },
+                "bin": [
+                    "ruckus.php"
+                ],
+                "name": "ruckusing/ruckusing-migrations",
+                "require": {
+                    "php": ">=5.2.0"
+                },
+                "type": "library",
+                "source": {
+                    "url": "https://github.com/garex/ruckusing-migrations",
+                    "type": "git",
+                    "reference": "issue/avoid-schema-constant"
+                },
+                "dist": {
+                    "url": "https://github.com/garex/ruckusing-migrations/archive/issue/avoid-schema-constant.zip",
+                    "type": "zip"
+                },
+                "version": "1.1.0.1"
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "samyk/evercookie",
+                "type": "library",
+                "version": "dev-2014-10-21",
+                "dist" : {
+                    "url": "https://github.com/samyk/evercookie/archive/977db236367c509ce6b10fb565ed5a75c8d729d5.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/samyk/evercookie.git",
+                    "type": "git",
+                    "reference": "977db236367c509ce6b10fb565ed5a75c8d729d5"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "pnegri/uuid-js",
+                "type": "library",
+                "version": "dev-master",
+                "dist" : {
+                    "url": "https://github.com/pnegri/uuid-js/archive/c0ed26d9e7de6ca8be2d3e1896fb2c920ee965c0.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/pnegri/uuid-js",
+                    "type": "git",
+                    "reference": "c0ed26d9e7de6ca8be2d3e1896fb2c920ee965c0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "broofa/node-uuid",
+                "type": "library",
+                "version": "v1.4.7",
+                "dist" : {
+                    "url": "https://github.com/broofa/node-uuid/archive/v1.4.7.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/broofa/node-uuid",
+                    "type": "git",
+                    "reference": "309512573ec1c60143c257157479a20f7f1f51cd"
+                }
+            }
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/garex/phpunit"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/garex/phpunit-mock-objects"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "flourish/flourish",
+                "version": "0.9.x-dev",
+                "autoload": {
+                    "classmap": ["."]
+                },
+                "source": {
+                    "url": "https://github.com/garex/flourish-classes",
+                    "type": "git",
+                    "reference": "c826410c3edb9da885e70c6f05d714b357fb2a4a"
+                },
+                "dist": {
+                    "url": "https://github.com/garex/flourish-classes/archive/c826410c3edb9da885e70c6f05d714b357fb2a4a.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ]
+}
