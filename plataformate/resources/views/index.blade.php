@@ -43,22 +43,7 @@
 
 <!--<div class="row">-->
 </br>
-      <div class="row"  id="footer">                
-        <!-- LOGOS -->
-        <div class="col-xs-3 .col-sm-3" >&nbsp;
-        </div>
-        <div class="col-xs-3 .col-sm-3" >
-                  <img src="{{ asset('assets/img/logos1.png')}}"  class="img-responsive" alt="Gobernación del Meta">
-                </div>
-        <div class="col-xs-3 .col-sm-3" >
-          <img src="{{ asset('assets/img/logos2.png')}}"  class="img-responsive" alt="Gobernación del Meta">
-        </div>
-         
-         
-      </div>  
-    <div id="barra-colores">
-    <img src={{ asset ('assets/img/BarraDeColores.png') }}  width="100%" style="max-height: 30px;"> 
-     </div> 
+       
 @endsection
 
 @push('styles')

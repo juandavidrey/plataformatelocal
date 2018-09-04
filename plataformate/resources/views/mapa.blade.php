@@ -11,27 +11,25 @@
 <div id="header">
     <div id="header-core">
         <div id="main-header">
-            <div id="logo">
-                <a rel="home" href="http://plataformate.com/mapa">
-                    <img src={{ asset ('assets/img/SUBTITULOCARACTERIZATE.png') }} width="520" height="49" >
-                </a>
-                <!-- #header-links .main-navigation -->
-                <ul class="header-links">
-                    <li id="items-nav">
-                        <a href="http://enterate.plataformate.com">
-                        Entérate
-                        </a>
-                    </li>
-                    <li id="items-nav">
-                        <a href="http://formate.plataformate.com">
-                        Fórmate
-                        </a>
-                    </li>
-                </ul> <!-- end header-links nav -->
-            </div> <!-- end logo -->
-            
+            <a rel="home" href="http://plataformate.com/home">
+                <img src={{ asset ('assets/img/SUBTITULOCARACTERIZATE.png') }} width="520" height="100" >
+            </a>
         </div> <!-- end main header -->
     </div> <!-- end header core -->
+    <ul class="header-links">
+        <section class="amjer">
+            <li id="items-nav">
+                <a href="http://enterate.plataformate.com">
+                Entérate
+                </a>
+            </li>
+            <li id="items-nav">
+                <a href="http://formate.plataformate.com">
+                    Fórmate
+                </a>
+            </li>
+        </section>
+    </ul> <!-- end header-links nav -->
 </div> <!-- end header -->
 
 
@@ -54,7 +52,6 @@
             <div class="contenido" >
             
             <!-- Aquí se carga la información -->
-          
           
           </div>
         </div>
@@ -209,15 +206,7 @@
   </div>
 </div>
 </div>
-<div>
-    <div class="col">
-        <center>
-            <img src={{ asset ('assets/img/logos1.png') }} alt="logos Gobernación" width="250px">
-            <img src={{ asset ('assets/img/logos2.png') }} alt="logos Secretarías" width="250px">
-        </center>
-        <img src={{ asset ('assets/img/BarraDeColores.png') }}  width="100%" style="max-height:30px;">
-    </div>
-</div>    
+    
 
 @endsection
 
@@ -227,6 +216,7 @@
   <link rel="stylesheet" href="assets/css/map.css">
   <link rel="stylesheet" href="assets/css/hover-min.css">
   <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/headerStyle.css">
 
 @endpush
