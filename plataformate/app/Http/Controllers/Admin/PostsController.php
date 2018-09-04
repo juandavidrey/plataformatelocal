@@ -18,16 +18,16 @@ class PostsController extends Controller
     }
 
     public function store(Request $request)
-    {      
+    {
         $this->validate($request, [
             'ngrupo' => 'required',
         ]);
 
         $file = $request->file('acta');
- 
+
         //obtenemos el nombre del archivo
 //        $nombre = $file->getClientOriginalName();
-  
+
         //indicamos que queremos guardar un nuevo archivo en el disco local
 //        \Storage::disk('local')->put($nombre,  \File::get($file));
 
@@ -45,24 +45,24 @@ class PostsController extends Controller
     }
 
      public function edit(Post $post)
-    {   
+    {
         $municipios = Municipio::all();
-       
+
         return view('admin.posts.edit', compact('municipios','post'));
     }
-   
+
     public function update(Post $post, StorePostRequest $request)
     {
-        $post->update($request->all());   
-      
-        return redirect()->route('admin.posts.edit', $post)->with('flash', 'El grupo ha sido Actualizado');
+        $post->update($request->all());
+
+        return redirect()->route('admin.posts.edit', $post)->with('flash', 'El grupo ha sido actualizado');
     }
 
     public function show(Post  $post)
-    {       
+    {
         return view('posts.show', compact('post'));
     }
-    
+
     public function destroy(Post $post)
     {
         $post->delete();
