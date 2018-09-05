@@ -59,8 +59,8 @@ header, #header-sticky {
 #items-nav{
     font-family: beepo !important;
     display: table-cell;
-    
-    
+    font-size: 25px;
+    color: black;
 }
 /* clase para los textos de la pagina de  inicio*/
 .indexText{

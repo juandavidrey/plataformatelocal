@@ -9,13 +9,13 @@
 						</center>
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<center><button type="button" class="btn btn-default">Acta</button>
+				<center><button type="button" style="border-radius:20px" class="btn btn-default">Acta</button>
 				</center>
 
 			</div>
 			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 						<center>
-						<button type="button" class="btn btn-default">Decreto</button>
+						<button type="button" style="border-radius:20px" class="btn btn-default">Decreto</button>
 						</center>
 			</div>
 	</div> <!--Fin documentos-->
@@ -100,7 +100,7 @@
 			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 						<ul>
 							<h5 align="center" >Rol</h5>
-							<li align="center">{{ $post->rol }}</li>
+							<li align="center">{{ $post->rol_contacto }}</li>
 						</ul>
 			</div>
 		</div>

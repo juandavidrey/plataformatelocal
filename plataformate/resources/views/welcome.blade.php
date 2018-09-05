@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- <div id="video-viewport"> -->
-<a href="{{ URL::to('home') }}" >    
+<a href="{{ URL::to('home') }}" >
    <video autoplay muted loop>
           <source src="assets/video/Intro-plataformate.mp4" type="video/mp4" />
           <source src="assets/video/Intro-plataformate.ogg" type="video/ogg" />
@@ -11,7 +11,7 @@
         </a>
       <!--</div>-->
 
-
+@include('footer')  
 
 @endsection
 
@@ -58,5 +58,5 @@ function fitVideo() {
 
 };
   </script>
-  
+
 @endpush
