@@ -1,4 +1,4 @@
-@extends('admin.layout')
+<!-- @extends('admin.layout')
 @section('header')
 	<h1>
         Grupos
@@ -15,46 +15,46 @@
 	<form  method="POST" action="{{ route('admin.posts.store') }}">
 			{{ csrf_field() }}
 		<div class="col-md-8">
-			<div class="box box-primary">                        
+			<div class="box box-primary">
 	            <div class="box-body">
 	              <div class="form-group {{ $errors->has('ngrupo') ? 'has-error': '' }}">
 	              	<label>Nombre del grupo</label>
-	              	<input name="ngrupo" 
-	              	type="text" 
-	              	class="form-control" 	              	
+	              	<input name="ngrupo"
+	              	type="text"
+	              	class="form-control"
 	              	placeholder="Ingresa el nombre del grupo">
 	              	{!! $errors->first('ngrupo', '<span class="help-block">:message</span>') !!}
-	              </div>              
+	              </div>
 	              <div class="form-group {{ $errors->has('body') ? 'has-error': '' }}">
 	              	<label>Contenido</label>
 	              	<textarea name="body" id="editor" rows="10" class="form-control" placeholder="Ingresa el contenido del grupo">
 	              		{{  old('body') }}
-	              	</textarea>	
+	              	</textarea>
 	              	{!! $errors->first('body', '<span class="help-block">:message</span>') !!}
 	              </div>
-	            </div>                       
+	            </div>
 	        </div>
 		</div>
 		<div class="col-md-4">
-			<div class="box box-primary">                        
+			<div class="box box-primary">
 	            <div class="box-body">
 	            	<div class="form-group {{ $errors->has('representante') ? 'has-error': '' }}">
 		              	<label>Representante</label>
 		              	<textarea name="representante"
-		              	class="form-control" 
+		              	class="form-control"
 		              	placeholder="Ingresa el nombre del representante del grupo">
 		              		{{ old('representante') }}
-		              	</textarea>	
+		              	</textarea>
 		              	{!! $errors->first('representante', '<span class="help-block">:message</span>') !!}
-					</div> 
+					</div>
 
 					<div class="form-group {{ $errors->has('representante') ? 'has-error': '' }}">
 		              	<label>Representante</label>
 		              	<textarea name="representante2"
-		              	class="form-control" 
+		              	class="form-control"
 		              	placeholder="Ingresa el nombre del representante del grupo">
 		              		{{ old('representante2') }}
-		              	</textarea>	
+		              	</textarea>
 		              	{!! $errors->first('representante2', '<span class="help-block">:message</span>') !!}
 		            </div>
 
@@ -62,35 +62,35 @@
 	            	<div class="form-group {{ $errors->has('representante') ? 'has-error': '' }}">
 		              	<label>Resumen</label>
 		              	<textarea name="resumen"
-		              	class="form-control" 
+		              	class="form-control"
 		              	placeholder="Ingresa el resumen del grupo">
 		              		{{ old('resumen') }}
-		              	</textarea>	
+		              	</textarea>
 		              	{!! $errors->first('resumen', '<span class="help-block">:message</span>') !!}
-		            </div>  
+		            </div>
 		            <div class="form-group {{ $errors->has('municipio') ? 'has-error': '' }}">
 		              	<label>Municipios</label>
 		              	<select name="municipio" class="form-control">
 		              		<option value="">Seleccione un municipio</option>
 		              		@foreach($municipios as $municipio)
-		              			<option value="{{ $municipio->id }}" 
+		              			<option value="{{ $municipio->id }}"
 		              				{{ old('municipio') == $municipio->id ? 'selected' : '' }}
 		              				>{{ $municipio->name }}</option>
 		              		@endforeach
-		              	</select>	
-		              	{!! $errors->first('municipio', '<span class="help-block">:message</span>') !!}	
-		            </div>  
+		              	</select>
+		              	{!! $errors->first('municipio', '<span class="help-block">:message</span>') !!}
+		            </div>
 		            <div class="form-group">
 						<div class="dropzone"></div>
 					</div>
-		            <div class="form-group">		              	
+		            <div class="form-group">
 		              	<button type="submit" class="btn btn-primary btn-block">Guardar</button>
-		            </div>  
-	            </div>                     
-	        </div>        
+		            </div>
+	            </div>
+	        </div>
 		</div>
-	</form> 
-</div>	         
+	</form>
+</div>
 @endsection
 
 @push('styles')
@@ -109,7 +109,7 @@
     /*var myDropzone = new Dropzone('.dropzone', {
     	url:'/admin/posta//photos',
     	paramName: 'photo',
-    	acceptedFiles: 'image/*',		    	
+    	acceptedFiles: 'image/*',
     	maxFilesize:2,
     	headers :{
     		'X-CSRF-TOKEN': ''
@@ -124,4 +124,4 @@
     Dropzone.autoDiscover = false;*/
   });
 </script>
-@endpush
+@endpush -->

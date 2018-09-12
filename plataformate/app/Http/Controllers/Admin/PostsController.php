@@ -58,10 +58,10 @@ class PostsController extends Controller
         return redirect()->route('admin.posts.edit', $post)->with('flash', 'El grupo ha sido actualizado');
     }
 
-    public function show(Post  $post)
-    {
-        return view('posts.show', compact('post'));
-    }
+    // public function show(Post  $post)
+    // {
+    //     return view('posts.show', compact('post'));
+    // }
 
     public function destroy(Post $post)
     {

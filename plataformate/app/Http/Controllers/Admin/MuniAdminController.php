@@ -1,25 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Municipio;
-use App\Post;
-use App\Photo;
 use Illuminate\Http\Request;
+use App\Municipio;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StorePostRequest;
 
-class MunicipiosController extends Controller
+class MuniAdminController extends Controller
 {
-    public function show(Municipio $municipio)
-    {
-      //captura los posts asociados al municipio
-       //$posts =  $municipio->posts;
-        return view('municipios',  [
-            'posts' => $municipio->posts
-        ]);
-    }
-
-    /*** subir pdf ****/
-
     /**
      * Display a listing of the resource.
      *
@@ -28,7 +17,8 @@ class MunicipiosController extends Controller
     public function index()
     {
         //
-        $files = File::orderBy('created_at', 'DESC')->paginate(30);
+        $municipios = Municipio::all();
+      	return view('admin.muninfo.index', compact('municipios'));
     }
 
     /**
@@ -52,6 +42,16 @@ class MunicipiosController extends Controller
         //
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    // public function show($id)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -59,11 +59,14 @@ class MunicipiosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Municipio $municipios)
     {
         //
-    }
+        //$municipios = Municipio::all();
 
+        return view('admin.muninfo.edit', compact('municipios'));
+    }
+    
     /**
      * Update the specified resource in storage.
      *

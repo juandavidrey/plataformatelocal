@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Municipio extends Model
 {
+    //Almacenar los pdf de las PMJ
+    protected $fillable = ['titulo','descripcion','url'];
+
     //retorno el nombre del grupo
     public function getRouteKeyName()
     {
