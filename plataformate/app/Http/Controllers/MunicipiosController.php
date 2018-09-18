@@ -12,10 +12,11 @@ class MunicipiosController extends Controller
     public function show(Municipio $municipio)
     {
       //captura los posts asociados al municipio
-       //$posts =  $municipio->posts;
-        return view('municipios',  [
-            'posts' => $municipio->posts
-        ]);
+      //$posts =  $municipio->posts;
+      $municipios = Municipio::all();
+      return view('municipios',  array(
+            'posts' => $municipio->posts, 'municipios' => $municipios
+      ));
     }
 
     /*** subir pdf ****/

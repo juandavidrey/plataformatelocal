@@ -45,7 +45,6 @@
         <div id="carga"  >
 
             <button type="button" class="cerrar"  onclick="$('#myModal').hide()" >X</button>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="$('#myModal').hide()"><p id="icon"><</p></button>
 
             <div class="contenido" >
 
@@ -204,7 +203,7 @@
   </div>
 </div>
 </div>
-@include('footer')        
+@include('footer')
 
 @endsection
 

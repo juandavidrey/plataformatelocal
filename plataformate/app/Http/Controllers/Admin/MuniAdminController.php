@@ -37,9 +37,11 @@ class MuniAdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Municipio $municipios)
     {
         //
+        $request->file('actapdf')->store('/public/pdf');
+        return back()->with('flash', 'Esto es el flash mágico');
     }
 
     /**
@@ -66,7 +68,7 @@ class MuniAdminController extends Controller
 
         return view('admin.muninfo.edit', compact('municipios'));
     }
-    
+
     /**
      * Update the specified resource in storage.
      *
@@ -74,9 +76,15 @@ class MuniAdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Municipio $municipios) //Request $request, $id
     {
         //
+        echo "en el update";
+        dd($request->all());
+        return $request->all();
+        $municipios->update($request->all());
+
+        return redirect()->route('admin.muninfo.edit', $municipios)->with('flash', 'Esto es el flash mágico');
     }
 
     /**

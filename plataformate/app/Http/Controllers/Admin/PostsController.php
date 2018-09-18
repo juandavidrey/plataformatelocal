@@ -13,7 +13,7 @@ class PostsController extends Controller
     public function index()
     {
     	$posts = Post::all();
-        $municipios = Municipio::all();
+      $municipios = Municipio::all();
     	return view('admin.posts.index', compact('posts','municipios'));
     }
 
@@ -51,7 +51,7 @@ class PostsController extends Controller
         return view('admin.posts.edit', compact('municipios','post'));
     }
 
-    public function update(Post $post, StorePostRequest $request)
+    public function update(Post $post, Request $request)
     {
         $post->update($request->all());
 

@@ -1,3 +1,4 @@
+
 @extends('layout')
 
 @section('content')
@@ -29,7 +30,7 @@
 
 		<div class="row">
 
-		@if($post->representante!='' && $loop->iteration == 1)
+
 			<div class=" col-sm-8 col-md-11 col-lg-12">
 				<h4  align="center">Representantes ante la PDJ</h4>
 			</div>
@@ -40,23 +41,24 @@
 			<div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
 					<ul>
 						<!--listado de integrantes-->
-						<h5>{{ $post->representante }}</h5>
-						<li >{{ $post->telefono_representante }}</li>
-						<li >{{ $post->correo_representante }}</li>
+						<h5>{{ $post->municipio->representante1}}</h5>
+            <li >{{ $post->municipio->rol_rep_1 }}</li>
+						<li >{{ $post->municipio->telefono_rep_1 }}</li>
+						<li >{{ $post->municipio->correo_rep_1 }}</li>
 					</ul>
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<ul>
-
-						<h5 >{{ $post->representante2 }}</h5>
-						<li >{{ $post->telefono_representante2 }}</li>
-						<li >{{ $post->correo_representante2 }}</li>
+            <h5>{{ $post->municipio->representante2}}</h5>
+            <li >{{ $post->municipio->rol_rep_2 }}</li>
+            <li >{{ $post->municipio->telefono_rep_2 }}</li>
+            <li >{{ $post->municipio->correo_rep_2 }}</li>
 					</ul>
 			</div>
 			<div class=" col-sm-2 col-md-2 col-lg-2">
 			</div>
 
-			@endif
+
 		</div>
 
 		<hr class="separador">
@@ -93,7 +95,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<ul><h5 align="center">Objetivos</h5>
-						<li align="center">{{ $post->objetivos }}</li>
+						<li align="justify">{{ $post->objetivos }}</li>
 				</ul>
 
 			</div>
