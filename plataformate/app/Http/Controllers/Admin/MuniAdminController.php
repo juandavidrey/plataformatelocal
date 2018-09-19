@@ -64,9 +64,9 @@ class MuniAdminController extends Controller
     public function edit(Municipio $municipios)
     {
         //
-        //$municipios = Municipio::all();
-
-        return view('admin.muninfo.edit', compact('municipios'));
+        $municipio = Municipio::find($id);
+        // $municipios = Municipio::all();
+        return view('admin.muninfo.edit', compact('municipio'));
     }
 
     /**
@@ -79,12 +79,14 @@ class MuniAdminController extends Controller
     public function update( MunicipiosRequest $municipiosrequest, Municipio $municipios) //Request $request, $id
     {
         //
-        echo "en el update";
-        dd($municipiosrequest->all());
-        return $municipiosrequest->all();
-        $municipios->update($municipiosrequest->all());
-
-        return redirect()->route('admin.muninfo.edit', $municipios)->with('flash', 'Esto es el flash mágico');
+        // dd($request->file('actapdf'));
+        // $request->file('actapdf')->store('/public/pdf');
+        // return $request->all();
+        $municipio = Municipio::find($municipio);
+        dd($municipio);
+        $municipio->update($request->all());
+        return back()->with('info', 'Municipio actualizado');
+        //return redirect()->route('admin.muninfo.edit', $municipios)->with('flash', 'Esto es el flash mágico');
     }
 
     /**
