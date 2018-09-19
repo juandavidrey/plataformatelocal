@@ -76,13 +76,13 @@ class MuniAdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Municipio $municipios) //Request $request, $id
+    public function update( MunicipiosRequest $municipiosrequest, Municipio $municipios) //Request $request, $id
     {
         //
         echo "en el update";
-        dd($request->all());
-        return $request->all();
-        $municipios->update($request->all());
+        dd($municipiosrequest->all());
+        return $municipiosrequest->all();
+        $municipios->update($municipiosrequest->all());
 
         return redirect()->route('admin.muninfo.edit', $municipios)->with('flash', 'Esto es el flash mágico');
     }

@@ -52,43 +52,27 @@
 
 					</div>
 					<div class="form-group">
+						<label>Carga las imagenes</label>
 					<div class="dropzone"></div>
 				</div>
-				<div class="form-group {{ $errors->has('municipio_id') ? 'has-error': '' }}">
-					<label>Municipio</label>
-					<select name="municipio_id" class="form-control">
-						<option value="">Seleccione un municipio</option>
-						@foreach($municipios as $municipio)
-							<option value="{{ $municipio->id }}"
-									{{ $post->municipio_id == $municipio->id ? 'selected' : '' }}
-								>{{ $municipio->name }}</option>
-						@endforeach
-					</select>
-		            {!! $errors->first('municipio', '<span class="help-block">:message</span>') !!}
-		        </div>
+
 			<div class="form-group {{ $errors->has('resumen') ? 'has-error': '' }}">
-					<label>Resumen de la organización</label>
-					<textarea name="resumen"
+					<label>Actividades de la organización</label>
+					<textarea name="resumen" rows="10"
 						class="form-control"
-						placeholder="Ingresa el resumen">{{ old('resumen', $post->resumen) }}</textarea>
+						placeholder="Ingresa las Actividades">{{ old('resumen', $post->resumen) }}</textarea>
 					{!! $errors->first('resumen', '<span class="help-block">:message</span>') !!}
 				</div>
-				<div class="form-group {{ $errors->has('rol_contacto') ? 'has-error': '' }}">
-					<label>Rol de la organización</label>
-					<textarea name="rol_contacto"
-						class="form-control"
-						placeholder="Ingresa el rol de la organización">{{ old('rol_contacto', $post->rol_contacto) }}</textarea>
-					{!! $errors->first('rol_contacto', '<span class="help-block">:message</span>') !!}
-				</div>
+
 				<div class="form-group {{ $errors->has('objetivos') ? 'has-error': '' }}">
 					<label>Objetivos de la organización</label>
-					<textarea name="objetivos"
+					<textarea name="objetivos" rows="10"
 						class="form-control"
 						placeholder="Ingresa los objetivos de la organización">{{ old('objetivos', $post->objetivos) }}</textarea>
 					{!! $errors->first('rol', '<span class="help-block">:message</span>') !!}
 				</div>
 					<div class="form-group {{ $errors->has('body') ? 'has-error': '' }}">
-						<label>Contenido del grupo</label>
+						<label>Logros de la Organización</label>
 						<textarea name="body" rows="10" id="editor" class="form-control" placeholder="Ingresa el contenido completo de la publicación">{{ old('body', $post->body) }}</textarea>
 						{!! $errors->first('body', '<span class="help-block">:message</span>') !!}
 					</div>
@@ -104,62 +88,25 @@
 			<div class="box-body">
 
 
-				<div class="form-group {{ $errors->has('representante') ? 'has-error': '' }}">
-					<label>Nombre del representante</label>
-					<input name="representante"
-						type="text"
-						class="form-control"
-						value="{{ old('representante', $post->representante) }}"
-						placeholder="Ingresa el nombre del representante">
-					{!! $errors->first('representante', '<span class="help-block">:message</span>') !!}
-				</div>
-				<div class="form-group {{ $errors->has('correo_representante') ? 'has-error': '' }}">
-					<label>Correo del representante</label>
-					<input name="correo_representante"
-						type="text"
-						class="form-control"
-						value="{{ old('correo_representante', $post->correo_representante) }}"
-						placeholder="Ingresa el correo del representante">
-					{!! $errors->first('correo_representante', '<span class="help-block">:message</span>') !!}
-				</div>
-				<div class="form-group {{ $errors->has('telefono_representante') ? 'has-error': '' }}">
-					<label>Telefono del representante</label>
-					<input name="telefono_representante"
-						type="text"
-						class="form-control"
-						value="{{ old('telefono_representante', $post->telefono_representante) }}"
-						placeholder="Ingresa el telefono del representante">
-					{!! $errors->first('telefono_representante', '<span class="help-block">:message</span>') !!}
-				</div>
-				<hr />
-				<div class="form-group {{ $errors->has('representante2') ? 'has-error': '' }}">
-					<label>Nombre del representante</label>
-					<input name="representante2"
-						type="text"
-						class="form-control"
-						value="{{ old('representante2', $post->representante2) }}"
-						placeholder="Ingresa el nombre del representante">
-					{!! $errors->first('representante2', '<span class="help-block">:message</span>') !!}
-				</div>
-				<div class="form-group {{ $errors->has('correo_representante2') ? 'has-error': '' }}">
-					<label>Correo del representante</label>
-					<input name="correo_representante2"
-						type="text"
-						class="form-control"
-						value="{{ old('correo_representante2', $post->correo_representante2) }}"
-						placeholder="Ingresa el correo del representante">
-					{!! $errors->first('correo_representante2', '<span class="help-block">:message</span>') !!}
-				</div>
-				<div class="form-group {{ $errors->has('telefono_representante2') ? 'has-error': '' }}">
-					<label>Telefono del representante</label>
-					<input name="telefono_representante2"
-						type="text"
-						class="form-control"
-						value="{{ old('telefono_representante2', $post->telefono_representante2) }}"
-						placeholder="Ingresa el telefono del representante">
-					{!! $errors->first('telefono_representante2', '<span class="help-block">:message</span>') !!}
-				</div>
-				<hr />
+				<div class="form-group {{ $errors->has('municipio_id') ? 'has-error': '' }}">
+					<label>Municipio</label>
+					<select name="municipio_id" class="form-control">
+						<option value="">Seleccione un municipio</option>
+						@foreach($municipios as $municipio)
+							<option value="{{ $municipio->id }}"
+									{{ $post->municipio_id == $municipio->id ? 'selected' : '' }}
+								>{{ $municipio->name }}</option>
+						@endforeach
+					</select>
+								{!! $errors->first('municipio', '<span class="help-block">:message</span>') !!}
+						</div>
+
+
+
+
+
+
+
 
 <div class="form-group {{ $errors->has('nombre_contacto') ? 'has-error': '' }}">
 					<label>Nombre de contacto</label>
@@ -189,6 +136,14 @@
 					{!! $errors->first('telefono_contacto', '<span class="help-block">:message</span>') !!}
 				</div>
 
+
+				<div class="form-group {{ $errors->has('rol_contacto') ? 'has-error': '' }}">
+					<label>Rol en la organización</label>
+					<textarea name="rol_contacto"
+						class="form-control"
+						placeholder="Rol del contacto en la organización">{{ old('rol_contacto', $post->rol_contacto) }}</textarea>
+					{!! $errors->first('rol_contacto', '<span class="help-block">:message</span>') !!}
+				</div>
 
 
 				<div class="form-group">
