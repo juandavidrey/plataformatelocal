@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Municipio;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StorePostRequest;
+use Validator, Input, Redirect, Session;
+use App\Http\Requests\MunicipiosRequest;
 
 class MuniAdminController extends Controller
 {
@@ -61,13 +62,13 @@ class MuniAdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Municipio $municipios)
-    {
-        //
-        $municipio = Municipio::find($id);
-        // $municipios = Municipio::all();
-        return view('admin.muninfo.edit', compact('municipio'));
-    }
+     public function edit($id)
+     {
+         //
+         $municipio = Municipio::find($id);
+         // $municipios = Municipio::all();
+         return view('admin.muninfo.edit', compact('municipio'));
+     }
 
     /**
      * Update the specified resource in storage.
@@ -76,17 +77,19 @@ class MuniAdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update( MunicipiosRequest $municipiosrequest, Municipio $municipios) //Request $request, $id
+    public function update($municipio, Request $request) //, $id MunicipiosRequest $municipiosrequest
     {
         //
         // dd($request->file('actapdf'));
         // $request->file('actapdf')->store('/public/pdf');
-        // return $request->all();
         $municipio = Municipio::find($municipio);
-        dd($municipio);
+        $municipio->representante1 = Input::get('representante1');
+        $municipio->acta = $request->file('actapdf')->store('public/pdf/acta');
+        $municipio->resolucion = $request->file('resolucionpdf')->store('public/pdf/resolucion');
+        $municipio->decreto = $request->file('decretopdf')->store('public/pdf/decreto');
         $municipio->update($request->all());
         return back()->with('info', 'Municipio actualizado');
-        //return redirect()->route('admin.muninfo.edit', $municipios)->with('flash', 'Esto es el flash mágico');
+        //return redirect()->route('admin.muninfo.edit', $municipio)->with('flash', 'Esto es el flash mágico');
     }
 
     /**

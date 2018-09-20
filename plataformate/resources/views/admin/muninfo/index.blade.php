@@ -32,7 +32,7 @@
 						<td>{{ $municipio->id }}</td>
 						<td>{{ $municipio->name }}</td>
 						<td>
-							<a href="{{ route('admin.muninfo.edit', $municipio) }}"
+							<a href="{{ route('admin.muninfo.edit', $municipio->id) }}"
 							class="btn btn-xs btn-info">
 								<i class="fa fa-pencil"></i>
 							</a>

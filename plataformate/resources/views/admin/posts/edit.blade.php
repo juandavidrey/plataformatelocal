@@ -35,7 +35,7 @@
 		</div>
 	</div>
 @endif
-	<form method="POST" action="{{ route('admin.posts.update', $post) }}">
+	<form method="POST" action="{{ route('admin.posts.update', $post) }}" enctype="multipart/form-data">
 		{{ csrf_field() }} {{ method_field('put') }}
 	<div class="col-xs-12 col-sm-8 col-md-8">
 		<div class="box box-primary">

@@ -51,9 +51,8 @@ class PostsController extends Controller
         return view('admin.posts.edit', compact('municipios','post'));
     }
 
-    public function update(Post $post, StorePostRequest $request)
+    public function update(Post $post, Request $request)
     {
-      die("en el update de PostsController");
       $post->update($request->all());
       return redirect()->route('admin.posts.edit', $post)->with('flash', 'El grupo ha sido actualizado');
     }
