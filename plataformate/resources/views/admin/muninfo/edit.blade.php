@@ -1,26 +1,19 @@
-	@extends('admin.layout')
+@extends('admin.layout')
 
 @section('header')
-		<h1>Editar municipio {{ $municipio->name }}</h1>
-		<small>Información del municipio</small>
-		<ol class="breadcrumb">
-			<li><a href=" {{ route('dashboard') }}"><i class="fa fa-dashboard"></i> Inicio</a></li>
-			<li><a href=" {{ route('admin.muninfo.index') }}"><i class="fa fa-list"></i>Información del municipio</a></li>
-			<li class="active">crear</li>
-		</ol>
+<h1>Editar municipio {{ $municipio->name }}</h1>
+<small>Información del municipio</small>
+<ol class="breadcrumb">
+  <li><a href=" {{ route('dashboard') }}"><i class="fa fa-dashboard"></i> Inicio</a></li>
+  <li><a href=" {{ route('admin.muninfo.index') }}"><i class="fa fa-list"></i>Información del municipio</a></li>
+  <li class="active">crear</li>
+</ol>
 @endsection
 
 @section('content')
 	<!-- Uso de laravel collective -->
 	{{ Form::model($municipio, array('route' => array('admin.muninfo.update', $municipio->id), 'method' => 'PUT', 'files' => true)) }}
 	<div class="row">
-		<div class="form-group">
-			{{ Form::label('actapdf', 'PDF del acta') }}
-			<input type="file" name="actapdf" accept="application/pdf"/>
-		</div>
-		<div class="form-group">
-			{{ Form::submit('Enviar', array('class' => 'btn btn-primary')) }}
-		</div>
 	<div class="col-xs-12 col-sm-8 col-md-8">
 		<div class="box box-primary">
 			<div class="box-body">
