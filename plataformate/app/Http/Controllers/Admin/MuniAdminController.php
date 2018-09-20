@@ -84,6 +84,13 @@ class MuniAdminController extends Controller
         // $request->file('actapdf')->store('/public/pdf');
         $municipio = Municipio::find($municipio);
         $municipio->representante1 = Input::get('representante1');
+        $municipio->representante2 = Input::get('representante2');
+        $municipio->rol_rep_1 = Input::get('rol_rep_1');
+        $municipio->rol_rep_2 = Input::get('rol_rep_2');
+        $municipio->correo_rep_1 = Input::get('correo_rep_1');
+        $municipio->correo_rep_2 = Input::get('correo_rep_2');
+        $municipio->telefono_rep_1 = Input::get('telefono_rep_1');
+        $municipio->telefono_rep_2 = Input::get('correo_rep_2');
         $municipio->acta = $request->file('actapdf')->store('public/pdf/acta');
         $municipio->resolucion = $request->file('resolucionpdf')->store('public/pdf/resolucion');
         $municipio->decreto = $request->file('decretopdf')->store('public/pdf/decreto');

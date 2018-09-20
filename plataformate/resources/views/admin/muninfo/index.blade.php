@@ -1,50 +1,49 @@
 @extends('admin.layout')
 
 @section('header')
-	<h1>
-		Información de municipios
-		<small>Listado</small>
-	</h1>
-	<ol class="breadcrumb">
-		<li><a href=" {{ route('dashboard') }}"><i class="fa fa-dashboard"></i> Inicio</a></li>
-		<li class="active">Información de municipios</li>
-	</ol>
+<h1>
+	Información de municipios
+	<small>Listado</small>
+</h1>
+<ol class="breadcrumb">
+  <li><a href=" {{ route('dashboard') }}"><i class="fa fa-dashboard"></i> Inicio</a></li>
+  <li class="active">Información de municipios</li>
+</ol>
 @endsection
 @section('content')
-	<div class="box box-primary">
-		<div class="box-header">
-			<h3 class="box-title">Listado de municipios</h3>
-			<!-- <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>  Crear Grupo</button> -->
-		</div>
-		<!-- /.box-header -->
-		<div class="box-body">
-			<table id="posta-table" class="table table-bordered table-striped">
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>MUNIICPIOS</th>
-						<th>EDITAR</th>
-					</tr>
-				</thead>
-				<tbody>
-					@foreach ($municipios as $municipio)
-					<tr>
-						<td>{{ $municipio->id }}</td>
-						<td>{{ $municipio->name }}</td>
-						<td>
-							<a href="{{ route('admin.muninfo.edit', $municipio->id) }}"
-							class="btn btn-xs btn-info">
-								<i class="fa fa-pencil"></i>
-							</a>
-						</td>
-					</tr>
-					@endforeach
-				</tbody>
-			</table>
-		</div>
-		<!-- /.box-body -->
-	</div>
-	<!-- /.box -->
+<div class="box box-primary">
+  <div class="box-header">
+    <h3 class="box-title">Listado de municipios</h3>
+    <!-- <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>  Crear Grupo</button> -->
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body">
+    <table id="posta-table" class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>MUNIICPIOS</th>
+          <th>EDITAR</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach ($municipios as $municipio)
+        <tr>
+          <td>{{ $municipio->id }}</td>
+          <td>{{ $municipio->name }}</td>
+          <td>
+            <a href="{{ route('admin.muninfo.edit', $municipio->id) }}" class="btn btn-xs btn-info">
+              <i class="fa fa-pencil"></i>
+            </a>
+          </td>
+        </tr>
+        @endforeach
+      </tbody>
+    </table>
+  </div>
+  <!-- /.box-body -->
+</div>
+<!-- /.box -->
 @endsection
 @push('styles')
   <!-- DataTables -->
