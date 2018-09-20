@@ -15,14 +15,19 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-      @stack('styles')
+    @stack('styles')
   </head>
-  <body>    
+  <body>
       @yield('content')
-  <!-- jQuery -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    @stack('scripts')
+
+      @push('styles')
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+      @endpush
+        <!-- jQuery -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="assets/js/bootstrap.min.js"></script>
+      @stack('scripts')
   </body>
 </html>

@@ -2,27 +2,24 @@
 @extends('layout')
 @section('content')
 
-<div id="video-viewport">
-<a href="{{ URL::to('home') }}" >    
+<!-- <div id="video-viewport"> -->
+<a href="{{ URL::to('home') }}" >
    <video autoplay muted loop>
           <source src="assets/video/Intro-plataformate.mp4" type="video/mp4" />
           <source src="assets/video/Intro-plataformate.ogg" type="video/ogg" />
         </video>
         </a>
-      </div>
+      <!--</div>-->
 
-<div id="barra-colores">
-    <img src={{ asset ('assets/img/BarraDeColores.png') }}  width="100%" style="max-height: 30px;">
-</div>
+@include('footer')  
+
 @endsection
 
 
 @push('styles')
 
- <!-- Estilos CSS -->
+     <!-- Estilos CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    
 
 @endpush
 
@@ -61,5 +58,5 @@ function fitVideo() {
 
 };
   </script>
-  
+
 @endpush

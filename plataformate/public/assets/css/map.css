@@ -26,7 +26,7 @@ header, #header-sticky {
 #main-header {
 	background: white;
 	color: black;
-    max-height: 80px;
+    max-height: 120px;
     padding-left:10px;
     
 }	
@@ -34,19 +34,33 @@ header, #header-sticky {
 .header-links{
     float: right;
     background: white;
-	color: #000000;
+	color: black;
+	font-weight: 300;
+	display:block;
 	font-style: normal;
     font-size: 25px;
+    margin-top: -3%;
+    overflow:hidden;
+    
+   
 }
-.header-links a:hover {
-    background-color: #9cdeff;
+.header-links a:hover{
+    text-decoration: none;
     color: white;
+    background: #1EAAF1;
+    padding:auto;
+    padding: 30px 45px;
+}
+.header-links  a{
+    padding: 30px 45px;
     text-decoration: none;
 }
+
 #items-nav{
     font-family: beepo !important;
     display: table-cell;
-    padding: 23px 25px;
+    font-size: 25px;
+    color: black;
 }
 /* clase para los textos de la pagina de  inicio*/
 .indexText{
@@ -63,10 +77,10 @@ header, #header-sticky {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;}
-
+    /*
 	#main-header a {
 		color: black;
-    }
+    }*/
     #main-header img{
         max-width: 60%;
         height: auto;
@@ -185,12 +199,8 @@ align-items: center;
 #imginstrucciones{
     width:300px;
     height:auto;
-    
     display: inline-block;
     padding: 0;
-
-	
-
 }
 #ImgOrganizaciones{
 border: 1px solid #ebb803;

@@ -34,24 +34,24 @@
          				<td>{{ $post->ngrupo }}</td>
          				<td>{{ $post->resumen }}</td>
          				<td>
-                  <a href="{!! url('grupos', $post->url) !!}" 
+                  <a href="{!! url('grupos', $post->url) !!}"
                     class="btn btn-xs btn-default"
-                    target="_blank" 
+                    target="_blank"
                     ><i class="fa fa-eye"></i>
                   </a>
-         					<a href="{{ route('admin.posts.edit', $post) }}" 
+         					<a href="{{ route('admin.posts.edit', $post) }}"
                       class="btn btn-xs btn-info">
                     <i class="fa fa-pencil"></i>
                    </a>
-                   <form method="POST" 
-                        action="{{ route('admin.posts.destroy', $post) }}" 
+                   <form method="POST"
+                        action="{{ route('admin.posts.destroy', $post) }}"
                         style="display:inline;">
                       {{ csrf_field() }} {{ method_field('DELETE') }}
                       <button  class="btn btn-xs btn-danger"
                         onclick="return confirm('¿Estás seguro de querer eliminar este grupo?')"
                       ><i class="fa fa-times"></i></button>
                    </form>
-         					
+
          				</td>
          			</tr>
          			@endforeach
@@ -60,8 +60,8 @@
             </div>
             <!-- /.box-body -->
           </div>
-          <!-- /.box -->          
-@endsection 
+          <!-- /.box -->
+@endsection
 @push('styles')
   <!-- DataTables -->
   <link rel="stylesheet" href="/adminlte/plugins/datatables/dataTables.bootstrap.css">
@@ -98,20 +98,20 @@
       <div class="modal-body">
         <div class="form-group {{ $errors->has('ngrupo') ? 'has-error': '' }}">
             {{-- <label>Nombre del grupo</label> --}}
-            <input name="ngrupo" 
-              type="text" 
-              class="form-control" 
-              value="{{ old('ngrupo') }}" 
+            <input name="ngrupo"
+              type="text"
+              class="form-control"
+              value="{{ old('ngrupo') }}"
               placeholder="Ingresa el nombre del grupo">
             {!! $errors->first('ngrupo', '<span class="help-block">:message</span>') !!}
-            
-          </div>    
+
+          </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         <button  class="btn btn-primary">Crear grupo</button>
       </div>
-    </div>    
+    </div>
   </div>
   </form>
 </div>

@@ -14,7 +14,11 @@
     </a>
     <ul class="treeview-menu">
       <li {{ request()->is('admin/posts') ? 'class=active' :'' }}>
-        <a href="{{ route('admin.posts.index') }}"><i class="fa fa-eye"></i> Ver grupos</a></li>      
+        <a href="{{ route('admin.posts.index') }}"><i class="fa fa-eye"></i> Ver grupos</a>
+      </li>
+      <li {{ request()->is('admin/posts') ? 'class=active' :'' }}>
+        <a href="{{ route('admin.muninfo.index') }}"><i class="fa fa-info"></i>Información de municipios</a>
+      </li>
     </ul>
   </li>
 

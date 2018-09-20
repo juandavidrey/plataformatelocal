@@ -87,11 +87,10 @@ video {
 #organizaciones{
 	padding-left: 6%;
 }
-#redessociales{
-font-weight: bold;
-  font-size: 21px;
-  color: #219EBD;
-
+/*clase para los íconos de redes sociales creados*/
+#redes-sociales img{
+    max-height: 4em;
+    display: inline-block;
 }
 #gobernacion{
 		padding-top: 2%;

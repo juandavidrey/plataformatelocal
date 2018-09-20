@@ -12,7 +12,7 @@ Route::get('home', 'PagesController@home');
 //vistas del administrador
 Route::group([
 	'prefix' => 'admin',
-	'namespace' => 'Admin',
+	'namespace' => 'admin',
 	'middleware' => 'auth'],
 
 	function(){
@@ -20,24 +20,26 @@ Route::group([
 		Route::get('/', 'AdminController@index')->name('dashboard');
 		//posts
 		Route::resource('posts','PostsController', ['except' => 'show', 'as' => 'admin']);
+		//información de los municipios (pdf y representantes)
+		Route::resource('muninfo','MuniAdminController', ['except' => 'show', 'as' => 'admin']);
 		//organizaciones
-		Route::group([
-			'prefix' => 'organizaciones'
-		],
-			function() {
-				Route::get('/','OrganizacionesController@index')->name('admin.organizaciones.index');
-				Route::post('/','OrganizacionesController@store')->name('admin.organizaciones.store');
-				Route::get('/create','OrganizacionesController@create')->name('admin.organizaciones.create');
-				Route::put('/{organizacion}','OrganizacionesController@update')->name('admin.organizaciones.update');
-				Route::post('/{organizacion}','OrganizacionesController@destroy')->name('admin.organizaciones.destroy');
-				Route::post('/{organizacion}/edit','OrganizacionesController@edit')->name('admin.organizaciones.edit');
-			}
-		);
+		// Route::group([
+		// 	'prefix' => 'organizaciones'
+		// ],
+		// 	function() {
+		// 		Route::get('/','OrganizacionesController@index')->name('admin.organizaciones.index');
+		// 		Route::post('/','OrganizacionesController@store')->name('admin.organizaciones.store');
+		// 		Route::get('/create','OrganizacionesController@create')->name('admin.organizaciones.create');
+		// 		Route::put('/{organizacion}','OrganizacionesController@update')->name('admin.organizaciones.update');
+		// 		Route::post('/{organizacion}','OrganizacionesController@destroy')->name('admin.organizaciones.destroy');
+		// 		Route::post('/{organizacion}/edit','OrganizacionesController@edit')->name('admin.organizaciones.edit');
+		// 	}
+		// );
 
 //		Route::resource('organizaciones','OrganizacionesController', ['except' => 'show', 'as' => 'admin']);
 		//usuarios
 		Route::resource('users','UsersController', ['as' => 'admin']);
-		
+
 		//photos
 		Route::post('posts/{post}/photos', 'PhotosController@store')->name('admin.posts.photos.store');
 		Route::delete('photos/{photo}', 'PhotosController@destroy')->name('admin.photos.destroy');
