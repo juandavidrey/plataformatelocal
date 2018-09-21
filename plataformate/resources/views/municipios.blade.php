@@ -2,57 +2,59 @@
 
 @section('content')
 <!--Contenido-->
-<div class="row">
-  <!--Documentos-->
-  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <center>
-      <button type="button" style="border-radius:20px" class="btn btn-default">Resoluci&oacuten</button>
-    </center>
-  </div>
-  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <center>
-      <button type="button" style="border-radius:20px" class="btn btn-default">Acta</button>
-    </center>
-  </div>
-  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-    <center>
-      <button type="button" style="border-radius:20px" class="btn btn-default">Decreto</button>
-    </center>
-  </div>
-</div>
-<!--Fin documentos-->
-<div class="row">
-  <div class=" col-sm-8 col-md-11 col-lg-12">
-    <h4 align="center">Representantes ante la PDJ</h4>
-  </div>
-</div>
 @foreach($posts as $post )
   @if ($loop->first)
-    <div class="row">
-      <div class=" col-sm-2 col-md-2 col-lg-2">
-      </div>
-      <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-        <ul>
-          <h5>{{ $post->municipio->representante1}}</h5>
-          <li>{{ $post->municipio->rol_rep_1 }}</li>
-          <li>{{ $post->municipio->telefono_rep_1 }}</li>
-          <li>{{ $post->municipio->correo_rep_1 }}</li>
-        </ul>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <ul>
-          <h5>{{ $post->municipio->representante2}}</h5>
-          <li>{{ $post->municipio->rol_rep_2 }}</li>
-          <li>{{ $post->municipio->telefono_rep_2 }}</li>
-          <li>{{ $post->municipio->correo_rep_2 }}</li>
-        </ul>
-      </div>
-      <div class=" col-sm-2 col-md-2 col-lg-2">
-      </div>
+  <!--Documentos-->
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <center>
+        <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='{{ Storage::url( $post->municipio->first()->acta ) }}'">Acta</button>
+      </center>
     </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <center>
+        <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='{{ Storage::url( $post->municipio->first()->resolucion ) }}'">Resoluci&oacuten</button>
+      </center>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+      <center>
+        <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='{{ Storage::url( $post->municipio->first()->decreto ) }}'">Decreto</button>
+      </center>
+    </div>
+  </div>
+  <!--Fin documentos-->
+  <div class="row">
+    <div class=" col-sm-8 col-md-11 col-lg-12">
+      <h4 align="center">Representantes ante la PDJ</h4>
+    </div>
+  </div>
+  <!--información de los representantes de la PDJ-->
+  <div class="row">
+    <div class=" col-sm-2 col-md-2 col-lg-2">
+    </div>
+    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+      <ul>
+        <h5>{{ $post->municipio->representante1}}</h5>
+        <li>{{ $post->municipio->rol_rep_1 }}</li>
+        <li>{{ $post->municipio->telefono_rep_1 }}</li>
+        <li>{{ $post->municipio->correo_rep_1 }}</li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <ul>
+        <h5>{{ $post->municipio->representante2}}</h5>
+        <li>{{ $post->municipio->rol_rep_2 }}</li>
+        <li>{{ $post->municipio->telefono_rep_2 }}</li>
+        <li>{{ $post->municipio->correo_rep_2 }}</li>
+      </ul>
+    </div>
+    <div class=" col-sm-2 col-md-2 col-lg-2">
+    </div>
+  </div>
+    <!--fin de la información PDJ-->
   @endif
+  <hr class="separador">
     <div class="row">
-      <hr class="separador">
       <!--Datos organizacion-->
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="imagegroup">

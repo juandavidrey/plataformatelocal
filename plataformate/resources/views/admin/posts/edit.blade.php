@@ -25,7 +25,6 @@
               <button class="btn btn-danger btn-xs" style="position:absolute;">
                 <i class="fa fa-remove"> </i>
               </button>
-
               <img class="img-responsive" src="{{ Storage::url( $photo->url ) }}">
             </div>
           </form>
