@@ -1,0 +1,29 @@
+.BotonesUpload {
+  visibility: hidden;
+  width: 0;
+  position: relative;
+ }
+ .BotonesUpload::before {
+  content: 'Selecciona el archivo a cargar';
+  display: inline-block;
+  background: #337ab7;
+  border: 1px solid #999;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 10pt;
+  visibility: visible;
+  position: absolute;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+ }
+ .BotonesUpload:hover::before {
+  border-color: #204d74;
+}
+.BotonesUpload:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}

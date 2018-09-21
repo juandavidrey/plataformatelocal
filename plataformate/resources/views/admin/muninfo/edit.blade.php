@@ -69,7 +69,7 @@
 							<div class="form-group ">
 								{{ Form::label('actapdf', 'Acta') }}
 								<span class="help-block">Carga el documento en PDF de la plataforma municipal</span>
-								<input type="file" name="actapdf" accept="application/pdf"/ class="btn btn-primary btn-block">
+								<input type="file" name="actapdf" accept="application/pdf"/ class="BotonesUpload">
 							</div>
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 								<div class="form-group ">
 									{{ Form::label('resolucionpdf', 'Resolución') }}
 									<span class="help-block">Carga el documento en PDF de la plataforma municipal</span>
-									<input type="file" name="resolucionpdf" accept="application/pdf"/>
+									<input type="file" name="resolucionpdf" accept="application/pdf" class="BotonesUpload">
 								</div>
 						</div>
 					</div>
@@ -91,7 +91,7 @@
 							<div class="form-group">
 								{{ Form::label('decretopdf', 'Decreto') }}
 								<span class="help-block">Carga el documento en PDF de la plataforma municipal</span>
-								<input type="file" name="decretopdf" accept="application/pdf"/>
+								<input type="file" name="decretopdf" accept="application/pdf" class="BotonesUpload">
 							</div>
 						</div>
 					</div>
@@ -110,4 +110,5 @@
 @endsection
 @push('styles')
 	<link rel="stylesheet" href="/adminlte/plugins/dropzone/css/dropzone.min.css">
+	<link rel="stylesheet" href="/adminlte/css/ImputType.css">
 @endpush
