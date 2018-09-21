@@ -15,7 +15,7 @@ class MunicipiosController extends Controller
       //$posts =  $municipio->posts;
       $municipios = Municipio::all();
       return view('municipios',  array(
-            'posts' => $municipio->posts, 'municipios' => $municipios
+            'posts' => $municipio->posts
       ));
     }
 
