@@ -101,7 +101,7 @@
 	</div>
 		<div class="col-md-12">
 			{{ Form::label('actualizar', 'Actualizar municipio') }}
-			<span class="help-block">Dale click a actualizar para guardar la información del municipio</span>
+			<span class="help-block">Dale clic a actualizar para guardar la información del municipio</span>
 			{{ Form::submit('Actualizar', array('class' => 'btn btn-primary btn-block')) }}
 		</div>
 	<!-- </form> -->

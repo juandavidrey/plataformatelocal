@@ -217,3 +217,12 @@ border: 1px solid #ebb803;
     font-family: oswald !important;
     font-size:17px;
  }
+ 
+.DivFixed{
+	 
+    position: fixed;
+    bottom: 350px;
+    right: 10px;
+    border: 3px solid #73AD21;
+
+ }

@@ -194,7 +194,11 @@
     </svg>
   </div>
   <!-- /Mapa -->
-
+  <div class="DivFixed">
+<a rel="home" href="http://radio.meta.gov.co/app/radiometa.html" target="popup" onclick="window.open(this.href, this.target, 'toolbar=0 , location=0 , status=0 , menubar=0 , scrollbars=0 , resizable=0,width=430px,height=600px'); return false;"">
+                <img src={{ asset ('assets/img/RadioPlataformate.png') }}  >
+            </a>
+			</div>
       <div  class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="instrucciones" >
         <img  id="imginstrucciones"
             src="{{ asset('assets/img/map/instrucciones.png') }}"   />
