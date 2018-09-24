@@ -7,19 +7,25 @@
   <!--Documentos-->
   <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <center>
-        <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='{{ Storage::url( $post->municipio->first()->acta ) }}'">Acta</button>
-      </center>
+      @if( !empty( $post->municipio->acta ) )
+        <center>
+          <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='{{ Storage::url( $post->municipio->acta ) }}'">Acta</button>
+        </center>
+      @endif
     </div>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <center>
-        <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='{{ Storage::url( $post->municipio->first()->resolucion ) }}'">Resoluci&oacuten</button>
-      </center>
+      @if( !empty( $post->municipio->resolucion ) )
+        <center>
+          <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='{{ Storage::url( $post->municipio->resolucion ) }}'">Resoluci&oacuten</button>
+        </center>
+      @endif
     </div>
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-      <center>
-        <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='{{ Storage::url( $post->municipio->first()->decreto ) }}'">Decreto</button>
-      </center>
+      @if( !empty( $post->municipio->decreto ) )
+        <center>
+          <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='{{ Storage::url( $post->municipio->decreto ) }}'">Decreto</button>
+        </center>
+      @endif
     </div>
   </div>
   <!--Fin documentos-->
