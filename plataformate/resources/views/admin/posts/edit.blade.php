@@ -42,8 +42,8 @@
           <div class="box-body">
             <div class="form-group {{ $errors->has('ngrupo') ? 'has-error': '' }}">
               <label>Nombre de la organización</label>
-              <input name="ngrupo" type="text" class="form-control" value="{{ old('ngrupo', $post->ngrupo) }}" placeholder="Ingresa el nombre del grupo"> {!! $errors->first('ngrupo', '<span class="help-block">:message</span>') !!}
-
+              <input name="ngrupo" type="text" class="form-control" value="{{ old('ngrupo', $post->ngrupo) }}" placeholder="Ingresa el nombre del grupo">
+							{!! $errors->first('ngrupo', '<span class="help-block">:message</span>') !!}
             </div>
             <div class="form-group">
               <label>Carga las imagenes</label>
@@ -80,20 +80,23 @@
               <option value="{{ $municipio->id }}" {{ $post->municipio_id == $municipio->id ? 'selected' : '' }} >{{ $municipio->name }}</option>
               @endforeach
             </select>
-            {!! $errors->first('municipio', '<span class="help-block">:message</span>') !!}
+            {!! $errors->first('municipio_id', '<span class="help-block">:message</span>') !!}
           </div>
 
           <div class="form-group {{ $errors->has('nombre_contacto') ? 'has-error': '' }}">
             <label>Nombre de contacto</label>
-            <input name="nombre_contacto" type="text" class="form-control" value="{{ old('nombre_contacto', $post->nombre_contacto) }}" placeholder="Ingresa el nombre del representante"> {!! $errors->first('nombre_contacto', '<span class="help-block">:message</span>') !!}
+            <input name="nombre_contacto" type="text" class="form-control" value="{{ old('nombre_contacto', $post->nombre_contacto) }}" placeholder="Ingresa el nombre del representante">
+						{!! $errors->first('nombre_contacto', '<span class="help-block">:message</span>') !!}
           </div>
           <div class="form-group {{ $errors->has('correo_contacto') ? 'has-error': '' }}">
             <label>Correo de contacto</label>
-            <input name="correo_contacto" type="text" class="form-control" value="{{ old('correo_contacto', $post->correo_contacto) }}" placeholder="Ingresa el correo de contacto"> {!! $errors->first('correo_contacto', '<span class="help-block">:message</span>') !!}
+            <input name="correo_contacto" type="text" class="form-control" value="{{ old('correo_contacto', $post->correo_contacto) }}" placeholder="Ingresa el correo de contacto">
+						{!! $errors->first('correo_contacto', '<span class="help-block">:message</span>') !!}
           </div>
           <div class="form-group {{ $errors->has('telefono_contacto') ? 'has-error': '' }}">
             <label>Telefono de contacto</label>
-            <input name="telefono_contacto" type="text" class="form-control" value="{{ old('telefono_contacto', $post->telefono_contacto) }}" placeholder="Ingresa el telefono de contacto"> {!! $errors->first('telefono_contacto', '<span class="help-block">:message</span>') !!}
+            <input name="telefono_contacto" type="text" class="form-control" value="{{ old('telefono_contacto', $post->telefono_contacto) }}" placeholder="Ingresa el telefono de contacto">
+						{!! $errors->first('telefono_contacto', '<span class="help-block">:message</span>') !!}
           </div>
 
           <div class="form-group {{ $errors->has('rol_contacto') ? 'has-error': '' }}">
