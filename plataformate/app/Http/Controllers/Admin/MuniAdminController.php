@@ -77,7 +77,7 @@ class MuniAdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update($municipio, Request $request) //, $id MunicipiosRequest $municipiosrequest
+    public function update($municipio, MunicipiosRequest $request) //, $id MunicipiosRequest $municipiosrequest
     {
         //
         // dd($request->file('actapdf'));
@@ -90,10 +90,16 @@ class MuniAdminController extends Controller
         $municipio->correo_rep_1 = Input::get('correo_rep_1');
         $municipio->correo_rep_2 = Input::get('correo_rep_2');
         $municipio->telefono_rep_1 = Input::get('telefono_rep_1');
-        $municipio->telefono_rep_2 = Input::get('correo_rep_2');
-        $municipio->acta = $request->file('actapdf')->store('public/pdf/acta');
-        $municipio->resolucion = $request->file('resolucionpdf')->store('public/pdf/resolucion');
-        $municipio->decreto = $request->file('decretopdf')->store('public/pdf/decreto');
+        $municipio->telefono_rep_2 = Input::get('telefono_rep_2');
+        if (!empty($request->file('actapdf'))) {
+          $municipio->acta = $request->file('actapdf')->store('public/pdf/acta');
+        }
+        if (!empty($request->file('resolucionpdf'))) {
+          $municipio->resolucion = $request->file('resolucionpdf')->store('public/pdf/resolucion');
+        }
+        if (!empty($request->file('decretopdf'))) {
+          $municipio->decreto = $request->file('decretopdf')->store('public/pdf/decreto');
+        }
         $municipio->update($request->all());
         return back()->with('info', 'Municipio actualizado');
         //return redirect()->route('admin.muninfo.edit', $municipio)->with('flash', 'Esto es el flash mágico');

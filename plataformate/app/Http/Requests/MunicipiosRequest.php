@@ -24,14 +24,14 @@ class MunicipiosRequest extends FormRequest
     public function rules()
     {
         return [
-            'CorreoRep1' => 'email|max:299',
-            'CorreoRep2' => 'email|max:299',
-			'RepresentanteName1' =>'alpha|max:299',
-			'RepresentanteName2' =>'alpha|max:299',
-			'RolRep1' =>'alpha|max:299',
-			'RolRep2' =>'alpha|max:299',
-			'TelefonoRep1' =>'numeric:max:10',
-			'TelefonoRep2' =>'numeric:max:10'
+          'correo_rep_1' => 'email|max:299',
+          'correo_rep_2' => 'email|max:299',
+    			'representante1' =>'string|max:299',
+    			'representante2' =>'string|max:299',
+    			'rol_rep_1' =>'alpha|max:299',
+    			'rol_rep_2' =>'alpha|max:299',
+    			'telefono_rep_1' =>'digits:10',
+    			'telefono_rep_2' =>'digits:10',
         ];
     }
 
@@ -39,23 +39,22 @@ class MunicipiosRequest extends FormRequest
 public function messages()
 {
     return [
-        'CorreoRep1.email' => 'El correo electronico no es valido.',
-		'CorreoRep2.email' => 'El correo electronico no es valido.',
-		'CorreoRep1.max' => 'Debes Digitar solo 299 Caracteres',
-		'CorreoRep2.max' => 'Debes Digitar solo 299 Caracteres',
-        'RepresentanteName1.alpha' => 'Debes digitar solo caracteres alfabéticos',
-		'RepresentanteName2.alpha' => 'Debes digitar solo caracteres alfabéticos',
-		'RepresentanteName1.max' => 'Debes Digitar solo 299 Caracteres',
-		'RepresentanteName2.max' => 'Debes Digitar solo 299 Caracteres',
-		'RolRep1.alpha' => 'Debes digitar solo caracteres alfabéticos',
-		'RolRep2.alpha' => 'Debes digitar solo caracteres alfabéticos',
-		'RolRep1.max' => 'Debes Digitar solo 299 Caracteres',
-		'RolRep2.max' => 'Debes Digitar solo 299 Caracteres',
-		'TelefonoRep1.numeric' => 'Debes Digitar solo números',
-		'TelefonoRep2.numeric' => 'Debes Digitar solo números',
-		'TelefonoRep1.max' => 'Debes Digitar solo 10 Caracteres',
-		'TelefonoRep2.max' => 'Debes Digitar solo 10 Caracteres'
-
+      'correo_rep_1.email' => 'El correo electrónico no es válido.',
+      'correo_rep_1.max' => 'Debes digitar solo 299 carácteres',
+      'correo_rep_2.email' => 'El correo electrónico no es válido.',
+      'correo_rep_2.max' => 'Debes digitar solo 299 carácteres',
+      'representante1.alpha' => 'Debes digitar solo carácteres alfabéticos',
+      'representante1.max' => 'Debes digitar solo 299 carácteres',
+      'representante2.alpha' => 'Debes digitar solo carácteres alfabéticos',
+      'representante2.max' => 'Debes digitar solo 299 carácteres',
+      'rol_rep_1.alpha' => 'Debes digitar solo carácteres alfabéticos',
+      'rol_rep_1.max' => 'Debes digitar solo 299 carácteres',
+      'rol_rep_2.alpha' => 'Debes digitar solo carácteres alfabéticos',
+      'rol_rep_2.max' => 'Debes digitar solo 299 carácteres',
+      'telefono_rep_1.numeric' => 'Debes digitar solo números',
+      'telefono_rep_1.value' => 'Debes digitar solo 10 carácteres',
+      'telefono_rep_2.numeric' => 'Debes digitar solo números',
+      'telefono_rep_2.value' => 'Debes digitar solo 10 carácteres'
     ];
 }
 
@@ -64,14 +63,14 @@ public function messages()
 public function attributes()
 {
     return [
-        'CorreoRep1' => 'Correo del Representante 1',
-		'CorreoRep2' => 'Correo del Representante 2',
-		'RepresentanteName1' => 'Nombre del Representante 1',
-		'RepresentanteName2' => 'Nombre del Representante 2',
-		'RolRep1' => 'Rol del Representante 1',
-		'RolRep2' => 'Rol del Representante 2',
-		'TelefonoRep1' => 'Teléfono del Representante 1',
-		'TelefonoRep2' => 'Teléfono del Representante 2'
+      'correo_rep_1' => 'correo del representante 1',
+      'correo_rep_2' => 'correo del representante 2',
+      'representante1' => 'nombre del representante 1',
+      'representante2' => 'nombre del representante 2',
+      'rol_rep_1' => 'rol del representante 1',
+      'rol_rep_2' => 'rol del representante 2',
+      'telefono_rep_1' => 'teléfono del representante 1',
+      'telefono_rep_2' => 'teléfono del representante 2'
 
     ];
 }

@@ -18,21 +18,25 @@
 		<div class="box box-primary">
 			<div class="box-body">
 					<div class="box-body">
-						<div class="form-group">
+						<div class="form-group {{ $errors->has('representante1') ? 'has-error': '' }}">
 								{{ Form::label('representante1', 'Nombre del representante 1') }}
-								{{ Form::text('representante1', null, array('class' => 'form-control')) }}
+								{{ Form::text('representante1', null, array('class' => 'form-control', 'placeholder'=>'Digita el nombre del representante')) }}
+                {!! $errors->first('representante1', '<span class="help-block">:message</span>') !!}
 						</div>
-						<div class="form-group ">
+            <div class="form-group {{ $errors->has('representante2') ? 'has-error': '' }}">
 							{{ Form::label('representante2', 'Nombre del representante 2') }}
-							{{ Form::text('representante2', null, array('class' => 'form-control')) }}
+              {{ Form::text('representante2', null, array('class' => 'form-control', 'placeholder'=>'Digita el nombre del representante')) }}
+              {!! $errors->first('representante2', '<span class="help-block">:message</span>') !!}
 						</div>
 						<div class="form-group {{ $errors->has('rol_rep_1') ? 'has-error': '' }}">
 							{{ Form::label('rol_rep_1', 'Rol del representante 1') }}
-							{{ Form::text('rol_rep_1', null, array('class' => 'form-control')) }}
+							{{ Form::text('rol_rep_1', null, array('class' => 'form-control', 'placeholder'=>'Digita el rol del representante')) }}
+              {!! $errors->first('rol_rep_1', '<span class="help-block">:message</span>') !!}
 						</div>
-						<div class="form-group ">
+            <div class="form-group {{ $errors->has('rol_rep_2') ? 'has-error': '' }}">
 							{{ Form::label('rol_rep_2', 'Rol del representante 2') }}
-							{{ Form::text('rol_rep_2', null, array('class' => 'form-control')) }}
+							{{ Form::text('rol_rep_2', null, array('class' => 'form-control', 'placeholder'=>'Digita el rol del representante')) }}
+              {!! $errors->first('rol_rep_2', '<span class="help-block">:message</span>') !!}
 						</div>
 				</div>
 			</div>
@@ -41,21 +45,25 @@
 	<div class="col-xs-12 col-sm-4 col-md-4">
 		<div class="box box-primary">
 			<div class="box-body">
-				<div class="form-group ">
+        <div class="form-group {{ $errors->has('correo_rep_1') ? 'has-error': '' }}">
 					{{ Form::label('correo_rep_1', 'Correo del representante 1') }}
-					{{ Form::text('correo_rep_1', null, array('class' => 'form-control')) }}
+					{{ Form::text('correo_rep_1', null, array('class' => 'form-control', 'placeholder'=>'Digita el correo electrónico')) }}
+          {!! $errors->first('correo_rep_1', '<span class="help-block">:message</span>') !!}
 				</div>
-				<div class="form-group ">
+        <div class="form-group {{ $errors->has('correo_rep_2') ? 'has-error': '' }}">
 					{{ Form::label('correo_rep_2', 'Correo del representante 2') }}
-					{{ Form::text('correo_rep_2', null, array('class' => 'form-control')) }}
+					{{ Form::text('correo_rep_2', null, array('class' => 'form-control', 'placeholder'=>'Digita el correo electrónico')) }}
+          {!! $errors->first('correo_rep_2', '<span class="help-block">:message</span>') !!}
 				</div>
-				<div class="form-group ">
+        <div class="form-group {{ $errors->has('telefono_rep_1') ? 'has-error': '' }}">
 					{{ Form::label('telefono_rep_1', 'Teléfono del representante 1') }}
-					{{ Form::text('telefono_rep_1', null, array('class' => 'form-control')) }}
+					{{ Form::text('telefono_rep_1', null, array('class' => 'form-control', 'placeholder'=>'Digita el teléfono')) }}
+          {!! $errors->first('telefono_rep_1', '<span class="help-block">:message</span>') !!}
 				</div>
-				<div class="form-group ">
+        <div class="form-group {{ $errors->has('telefono_rep_2') ? 'has-error': '' }}">
 					{{ Form::label('telefono_rep_2', 'Teléfono del representante 2') }}
-					{{ Form::text('telefono_rep_2', null, array('class' => 'form-control')) }}
+					{{ Form::text('telefono_rep_2', null, array('class' => 'form-control', 'placeholder'=>'Digita el teléfono')) }}
+          {!! $errors->first('telefono_rep_2', '<span class="help-block">:message</span>') !!}
 				</div>
 			</div>
 		</div>
