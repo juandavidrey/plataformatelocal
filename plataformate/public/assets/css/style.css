@@ -94,13 +94,13 @@ video {
 }
 #gobernacion{
 		padding-top: 2%;
-		
+
 }
 
 /*barra de colores*/
 #barra-colores{
     position: fixed;
-    max-height: 30px; 
+    max-height: 30px;
     width: 100%;
     bottom: 0px;
     vertical-align: baseline;
@@ -137,13 +137,13 @@ center, .letra_index{
 		width: 90%;
 	}*/
 	#menutadesktop{
-			
+
 		text-align: center;
 		margin-top: 20%;
-		
+
 		margin-left: auto;
 		margin-right: auto;
-	
+
 	}
 	#redes{
 		list-style: none;
@@ -222,3 +222,13 @@ center, .letra_index{
     -o-transform:rotate(-360deg);
     -ms-transform:rotate(-360deg);
     transform:rotate(-360deg);
+	}
+	.sobre {
+		position: absolute;
+		top: 140px;
+		left: 155px;
+		border: none;
+	}
+	.sobre:hover{
+		filter: opacity(.1);;
+	}
